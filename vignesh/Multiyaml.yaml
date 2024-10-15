@@ -1,0 +1,218 @@
+---
+kind: api
+apiVersion: api.webmethods.io/beta
+metadata:
+  name: Aadhira
+  namespace: viki
+  version: alpha
+  tags:
+    - one
+    - two
+    - three
+  type: REST
+spec:
+  mocked: true
+  api-spec:
+    $path: petstore.yaml
+  policy-sequence:
+    - $ref: daso:policyseq:alpha
+
+---
+kind: HTTPEndpoint
+apiVersion: api.webmethods.io/beta
+metadata:
+  name: endpoint
+  version: alpha
+  namespace: daso
+spec:
+  url: http://petstore.swagger.io
+  method: GET
+  connectTimeout: 300
+  readTimeout: 200
+  sslConfig:
+    keyStoreAlias: ''
+    keyAlias: ''
+    truststoreAlias: ''
+  serviceRegistryParameters:
+    - name: ''
+      value: ''
+---
+kind: IdentifyAndAuthorize
+apiVersion: api.webmethods.io/beta
+metadata:
+  name: My_IAM
+  version: alpha
+  namespace: daso
+  tags:
+    - IAM
+spec:
+  enabled: true
+  triggerPolicyViolation: true
+  identificationType:
+    or:
+      apiKey:
+        applicationLookup: registered
+      httpBasicAuth:
+        applicationLookup: registered
+
+---
+kind: Log
+apiVersion: api.webmethods.io/beta
+metadata:
+  name: log_invocation
+  version: alpha
+  namespace: daso
+  tags:
+    - log_invocation
+spec:
+  enabled: true
+  logRequestHeaders: true
+  logResponseHeaders: true
+  logRequestPayload: true
+  logResponsePayload: true
+  compressPayloads: true
+  logGenerationFrequency: always
+  destination:
+    - self
+    - dev_portals:
+        - devportal1
+    - email:
+        - daso@ibm.com
+        - daso@sag.com
+        - daso@sag.com
+
+---
+kind: PolicySequence
+apiVersion: api.webmethods.io/daso
+metadata:
+  name: policyseq
+  version: alpha
+  namespace: daso
+  tags:
+    - seq
+spec:
+  transport:
+    - $ref: daso:transport:alpha
+  iam:
+    - $ref: daso:My_IAM:alpha
+  monitoring:
+    - $ref: daso:log_invocation:alpha
+  routing:
+    - $ref: daso:routing:alpha
+  req-processing:
+    - $ref: daso:validate_API_Specification_policy:alpha
+    - $ref: daso:request_processing_policy:alpha
+  res-processing: null
+
+---
+kind: TransformRequest
+apiVersion: api.webmethods.io/v1
+metadata:
+  name: request_processing_policy
+  version: alpha
+  namespace: daso
+  tags:
+    - iden
+spec:
+  condition: >-
+    (${request.headers.test} equals test1) or (${request.headers.test} notEquals
+    ${request.payload.jsonPath[$.customer.name]})
+  set:
+    - key: ${request.headers.authorization}
+      value: ${request.authorization.authHeader}
+    - key: ${request.headers.h2}
+      value: test-header-value
+    - key: ${request.query.q2}
+      value: ${request.path.name}
+  setPayload:
+    content-types:
+      - application/xml: <test></test>
+    xsl:
+      - $path: format.xsl
+  remove:
+    - ${request.query.q1}
+    - ${request.path.mki}
+  namespaces:
+    - prefix: ps1
+      URI: http://test.com
+    - prefix: ps2
+      URI: http://test2.com
+
+---
+kind: TransformResponse
+apiVersion: api.webmethods.io/beta
+metadata:
+  namespace: daso
+  name: response-processing-policy
+  version: alpha
+spec:
+  condition: (${response.headers.name} equals svis)
+  transformations:
+    set:
+      - key: ${response.headers.h2}
+        value: test-header-value
+    setStatus:
+      code: 400
+      message: Invalid request
+    setPayload:
+      content-types:
+        - application/xml: <test></test>
+      xsl:
+        - $path: format.xsl
+    remove:
+      - ${response.headers.name}
+    namespaces:
+      - prefix: ps1
+        URI: http://test.com
+      - prefix: ps2
+        URI: http://test2.com
+
+---
+kind: Route
+apiVersion: api.webmethods.io/beta
+metadata:
+  name: routing
+  version: alpha
+  namespace: daso
+  tags:
+    - routing
+    - route
+    - policy
+spec:
+  default-endpoint:
+    $ref: daso:endpoint:alpha
+
+---
+kind: Transport
+apiVersion: api.webmethods.io/beta
+metadata:
+  name: transport
+  namespace: daso
+  version: alpha
+spec:
+  protocol:
+    - http
+
+---
+kind: ValidateAPISpecification
+apiVersion: api.webmethods.io/beta
+metadata:
+  namespace: daso
+  name: validate_API_Specification_policy
+  version: alpha
+spec:
+  validate:
+    - query
+    - path
+    - cookie
+    - contentType
+    - headers:
+        condition: (${request.headers.test} equals test1) or (${request.headers.test})
+    - schema:
+        feature:
+          - name: TOLERATE_DUPLICATES
+            value: true
+          - name: DISALLOW_DOCTYPE
+            value: false
+          - name: NAMESPACE_GROWTH
+            value: false
