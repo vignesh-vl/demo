@@ -5,7 +5,7 @@ metadata:
   namespace: yy
   version: yy
   tags: []
-  description: ''
+  description: 'vv'
 spec:
   routing:
     - $ref: yy:yy-Route:yy

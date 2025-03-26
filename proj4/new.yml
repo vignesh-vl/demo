@@ -5,7 +5,7 @@ metadata:
   namespace: mon
   version: 1
   tags:
-    - Razorp
+    - Razop
 spec:
   mocked: true
   api-spec:

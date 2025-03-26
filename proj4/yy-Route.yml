@@ -5,7 +5,7 @@ metadata:
   namespace: yy
   version: yy
   tags: []
-  description: 'uu'
+  description: 'u'
 spec:
   mock-endpoint:
     enabled: true
