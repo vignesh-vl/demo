@@ -5,13 +5,14 @@ metadata:
   namespace: default
   version: '1.0'
   tags:
-    - ta1
+    - tag1
     - tag2
-  description: ''
 spec:
   headers:
     - key: demo
       value: demo
+    - key: demo2
+      value: demo2
   data:
     - contentType: demo
       content: demo

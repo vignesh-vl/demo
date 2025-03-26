@@ -16,10 +16,9 @@ spec:
         defaultResponse:
           '201':
             response:
-              $ref: default:Mock-Response-8le17k:1.0
+              $ref: default:Mock-Response-y80c5v:1.0
         conditionalResponse:
           - condition: hh
             statusCode: 209
             response:
               $ref: default:Mock-Response-r6njzt:1.0
-

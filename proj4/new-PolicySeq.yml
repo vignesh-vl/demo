@@ -5,7 +5,7 @@ metadata:
   namespace: new
   version: new
   tags: []
-  description: 'j'
+  description: 'jh0'
 spec:
   routing:
     - $ref: new:new-Route:new
