@@ -1,0 +1,11 @@
+kind: PolicySequence
+apiVersion: api.webmethods.io/beta
+metadata:
+  name: new-PolicySeq
+  namespace: new
+  version: new
+  tags: []
+  description: ''
+spec:
+  routing:
+    - $ref: new:new-Route:new

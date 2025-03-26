@@ -1,0 +1,12 @@
+kind: Route
+apiVersion: api.webmethods.io/beta
+metadata:
+  name: new-Route
+  namespace: new
+  version: new
+  tags: []
+  description: ''
+spec:
+  mock-endpoint:
+    enabled: true
+    $ref: new:new-endpoint:new

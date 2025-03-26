@@ -1,0 +1,14 @@
+kind: MockEndpoint
+apiVersion: api.webmethods.io/beta
+metadata:
+  name: new-endpoint
+  namespace: new
+  version: new
+  tags: []
+  description: ''
+spec:
+  paths:
+    /pet:
+      put:
+        defaultResponse: {}
+        conditionalResponse: []

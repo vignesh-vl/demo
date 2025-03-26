@@ -1,0 +1,16 @@
+kind: MockResponse
+apiVersion: api.webmethods.io/beta
+metadata:
+  name: Mock-Response-vx3wu2
+  namespace: default
+  version: '1.0'
+  tags:
+    - tag1
+    - tag2
+spec:
+  headers:
+    - key: hell02
+      value: hello2
+  data:
+    - contentType: hello
+      content: hello

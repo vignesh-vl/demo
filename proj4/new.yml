@@ -1,0 +1,14 @@
+kind: api
+apiVersion: api.webmethods.io/beta
+metadata:
+  name: MonitoringAPI
+  namespace: mon
+  version: 1
+  tags:
+    - Razorp
+spec:
+  mocked: true
+  api-spec:
+    $path: ./spec.yml
+  policy-sequence:
+    - $ref: new:new-PolicySeq:new
