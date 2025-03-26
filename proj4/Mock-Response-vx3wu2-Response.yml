@@ -5,7 +5,7 @@ metadata:
   namespace: default
   version: '1.0'
   tags:
-    - tag1
+    - ag1
     - tag2
 spec:
   headers:

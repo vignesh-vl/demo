@@ -5,10 +5,15 @@ metadata:
   namespace: new
   version: new
   tags: []
-  description: ''
+  description: ii
 spec:
   paths:
     /pet:
       put:
         defaultResponse: {}
         conditionalResponse: []
+      post:
+        defaultResponse:
+          '201':
+            response:
+              $ref: default:Mock-Response-8le17k:1.0

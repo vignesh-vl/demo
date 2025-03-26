@@ -1,17 +1,13 @@
 kind: MockResponse
 apiVersion: api.webmethods.io/beta
 metadata:
-  name: Mock-Response-y80c5v
+  name: Mock-Response-8le17k
   namespace: default
   version: '1.0'
   tags:
-    - ta1
+    - tag1
     - tag2
   description: ''
 spec:
-  headers:
-    - key: demo
-      value: demo
-  data:
-    - contentType: demo
-      content: demo
+  headers: []
+  data: []

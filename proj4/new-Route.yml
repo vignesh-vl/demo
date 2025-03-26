@@ -5,7 +5,7 @@ metadata:
   namespace: new
   version: new
   tags: []
-  description: ''
+  description: 'hh'
 spec:
   mock-endpoint:
     enabled: true
