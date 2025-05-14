@@ -9,7 +9,7 @@ metadata:
     - onei
     - tw
   
-  type: RESTh
+  type: REST
 spec:
   mocked: true
   api-spec: 
