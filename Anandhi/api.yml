@@ -6,8 +6,8 @@ metadata:
   namespace: viki
   version: alpha
   tags:
-    - on
-    - two
+    - one
+    - tw
     - three
   type: REST
 spec:
