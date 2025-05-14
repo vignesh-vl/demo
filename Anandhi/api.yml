@@ -6,7 +6,7 @@ metadata:
   namespace: viki
   version: alpha
   tags:
-    - one
+    - on
     - two
     - three
   type: REST
