@@ -8,7 +8,7 @@ metadata:
   tags:
     - one
     - tw
-    - three
+  
   type: REST
 spec:
   mocked: true
