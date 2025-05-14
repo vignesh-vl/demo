@@ -2,14 +2,14 @@
 kind: api
 apiVersion: api.webmethods.io/beta
 metadata:
-  name: Aadhir
+  name: Aadh
   namespace: viki
   version: alpha
   tags:
     - onei
     - tw
   
-  type: REST
+  type: RESTh
 spec:
   mocked: true
   api-spec: 
