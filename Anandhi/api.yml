@@ -2,7 +2,7 @@
 kind: api
 apiVersion: api.webmethods.io/beta
 metadata:
-  name: Aadhira
+  name: Aadhirai
   namespace: viki
   version: alpha
   tags:
