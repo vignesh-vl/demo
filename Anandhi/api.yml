@@ -7,7 +7,7 @@ metadata:
   version: alpha
   tags:
     - one
-    - tw0
+    - tw
     - three
   type: REST
 spec:
