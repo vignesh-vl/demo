@@ -10,7 +10,7 @@ spec:
   connectTimeout: 300
   readTimeout: 200
   sslConfig:
-    keyStoreAlias: ""
+    keyStoreAlias: "hhhhh"
     keyAlias: ""
     truststoreAlias: ""
   serviceRegistryParameters:
