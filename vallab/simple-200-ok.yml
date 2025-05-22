@@ -1,0 +1,12 @@
+kind: assertion
+apiVersion: api.webmethods.io/beta
+metadata:
+  name: simple-200-ok
+  namespace: control-plane-apis
+  version: '1.0'
+  tags: []
+spec:
+  - name: simple-200-ok
+    key: code
+    action: equals
+    value: 200

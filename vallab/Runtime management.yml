@@ -1,0 +1,13 @@
+kind: api
+apiVersion: api.webmethods.io/beta
+metadata:
+  name: Runtime management
+  namespace: control-plane-apis
+  version: '1.0'
+  tags: []
+  type: REST
+spec:
+  api-spec:
+    $path: Runtime management-spec.yml
+  policy-sequence:
+    - $ref: control-plane-apis:mysequence:1.0

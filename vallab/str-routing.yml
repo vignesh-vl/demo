@@ -1,0 +1,10 @@
+kind: Route
+apiVersion: api.webmethods.io/beta
+metadata:
+  name: str-routing
+  namespace: control-plane-apis
+  version: '1.0'
+  tags: []
+spec:
+  default-endpoint:
+    $ref: default:Endpoint-lxnjza:1.0

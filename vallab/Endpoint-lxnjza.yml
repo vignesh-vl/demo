@@ -1,0 +1,11 @@
+kind: HTTPEndpoint
+apiVersion: api.webmethods.io/beta
+metadata:
+  name: Endpoint-lxnjza
+  namespace: default
+  version: '1.0'
+  tags: []
+spec:
+  method: CUSTOM
+  url: >-
+    https://demo-control-plane.apps.incubation-demo.cp.fyre.ibm.com/api/assetcatalog

@@ -1,0 +1,20 @@
+kind: test
+apiVersion: api.webmethods.io/beta
+metadata:
+  name: runtime-mgmt-test
+  namespace: control-plane-apis
+  version: '1.0'
+  tags: []
+spec:
+  api:
+    $ref: 'control-plane-apis:Runtime management:1.0'
+  request:
+    - method: GET
+      resource: /v1/runtimes
+      headers:
+        - key: Content-Type
+          value: application/json
+      auth:
+        noauth: true
+      assertions:
+        $ref: "control-plane-apis:simple-200-ok:1.0"
