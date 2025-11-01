@@ -1,0 +1,12 @@
+kind: PolicySequence
+apiVersion: api.webmethods.io/beta
+metadata:
+  name: mysequence
+  namespace: control-plane-apis
+  version: '1.0'
+  tags: []
+spec:
+  transport:
+    - $ref: control-plane-apis:transport:1.0
+  routing:
+    - $ref: control-plane-apis:str-routing:1.0
