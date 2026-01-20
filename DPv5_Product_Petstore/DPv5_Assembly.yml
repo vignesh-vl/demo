@@ -1,0 +1,30 @@
+kind: DataPowerAssembly
+apiVersion: api.ibm.com/v1
+metadata:
+  name: DPv5_Assembly
+  namespace: DPv5_Product_Petstore
+  version: '1.0'
+  tags: []
+  labels:
+    gatewayTypes:
+      - datapower-v5
+spec:
+  x-ibm-configuration:
+    enforced: true
+    testable: true
+    phase: realized
+    gateway: datapower-gateway
+    assembly:
+      execute:
+        - invoke:
+            version: 1.0.0
+            title: invoke
+            timeout: 60
+            verb: GET
+            cache-response: protocol
+            cache-ttl: 900
+            target-url: https://sample-api.us-east-a.apiconnect.dev.automation.ibm.com/petstore$(api.operation.path)
+    activity-log:
+      enabled: true
+      success-content: activity
+      error-content: payload

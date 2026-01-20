@@ -1,0 +1,15 @@
+kind: API
+apiVersion: api.ibm.com/v1
+metadata:
+  name: GlobalWeather_Soap_Api
+  namespace: DPv6_Product_GlobalWeather_Soap
+  version: '1.0'
+  tags: []
+  type: SOAP
+spec:
+  api-spec:
+    $path: ./globalweather.wsdl
+  rest-def:
+    $path: ./GlobalWeather_Soap_Api-spec.yaml
+  policy-sequence:
+    - $ref: DPv6_Product_GlobalWeather_Soap:assembly-GlobalWeather_Soap_Api:1.0

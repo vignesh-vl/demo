@@ -1,0 +1,13 @@
+kind: environment
+apiVersion: api.ibm.com/v1
+metadata:
+  name: Default_Environment
+  version: "1.0"
+  namespace: wM_APIKey_Petstore
+  tags:
+    - environment
+spec:
+  variables:
+    - key: apikey
+      isSecret: true
+      value: 73715dcc53c58430b9d416fc57245a00

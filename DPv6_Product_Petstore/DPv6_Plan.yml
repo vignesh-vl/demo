@@ -1,0 +1,18 @@
+kind: Plan
+apiVersion: api.ibm.com/v1
+metadata:
+  name: DPv6_Plan
+  namespace: DPv6_Product_Petstore
+  version: '1.0'
+  tags:
+    - plan
+spec:
+  qos:
+    withQuota:
+      plan-limit:
+        - $ref: DPv6_Product_Petstore:DPv6_Quota:1.0
+  extensions:
+    dp-gateway:
+      apiVersion: api.ibm.com/v1
+      spec:
+        approvalRequired: false

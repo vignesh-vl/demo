@@ -1,0 +1,13 @@
+kind: Product
+apiVersion: api.ibm.com/v1
+metadata:
+  name: DPv6_Product_Soap
+  namespace: DPv6_Product_GlobalWeather_Soap
+  version: '1.0'
+  tags: []
+  description: ''
+spec:
+  apis:
+    - $ref: DPv6_Product_GlobalWeather_Soap:GlobalWeather_Soap_Api:1.0
+  plans:
+    - $ref: DPv6_Product_GlobalWeather_Soap:DPv6_Plan_Soap:1.0

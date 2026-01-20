@@ -1,0 +1,14 @@
+kind: API
+apiVersion: api.ibm.com/v1
+metadata:
+  name: PetstoreAPI_APIKey
+  namespace: wM_APIKey_Petstore
+  version: '1.0'
+  tags:
+    - api
+  type: REST
+spec:
+  api-spec:
+    $path: ./PetstoreAPI-spec.json
+  policy-sequence:
+    - $ref: wM_APIKey_Petstore:wM_PolicySequence:1.0

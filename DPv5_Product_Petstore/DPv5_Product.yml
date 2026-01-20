@@ -1,0 +1,13 @@
+kind: Product
+apiVersion: api.ibm.com/v1
+metadata:
+  name: DPv5_Product
+  namespace: DPv5_Product_Petstore
+  version: '1.0'
+  tags: []
+  description: ''
+spec:
+  apis:
+    - $ref: DPv5_Product_Petstore:PetstoreAPI:1.0
+  plans:
+    - $ref: DPv5_Product_Petstore:DPv5_Plan:1.0

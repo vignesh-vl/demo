@@ -1,0 +1,14 @@
+kind: API
+apiVersion: api.ibm.com/v1
+metadata:
+  name: PetstoreAPI
+  namespace: DPv6_Product_Petstore
+  version: '1.0'
+  tags:
+    - api
+  type: REST
+spec:
+  api-spec:
+    $path: ./PetstoreAPI-spec.json
+  policy-sequence:
+    - $ref: DPv6_Product_Petstore:DPv6_Assembly:1.0

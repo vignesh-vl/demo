@@ -1,0 +1,13 @@
+kind: Plan
+apiVersion: api.ibm.com/v1
+metadata:
+  name: DPv5_Plan
+  namespace: DPv5_Product_Petstore
+  version: '1.0'
+  tags: []
+  description: ''
+spec:
+  qos:
+    withQuota:
+      plan-limit:
+        - $ref: DPv5_Product_Petstore:DPv5_Quota:1.0

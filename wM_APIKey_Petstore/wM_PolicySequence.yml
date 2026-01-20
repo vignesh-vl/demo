@@ -1,0 +1,17 @@
+kind: StagedPolicySequence
+apiVersion: api.ibm.com/v1
+metadata:
+  name: wM_PolicySequence
+  namespace: wM_APIKey_Petstore
+  version: '1.0'
+  tags: []
+  labels:
+    gatewayTypes:
+      - webMethods
+spec:
+  routing:
+    - $ref: wM_APIKey_Petstore:wM_Invoke:1.0
+  monitoring:
+    - $ref: wM_APIKey_Petstore:wM_Log:1.0
+  security:
+    - $ref: wM_APIKey_Petstore:wM_APIKey:1.0

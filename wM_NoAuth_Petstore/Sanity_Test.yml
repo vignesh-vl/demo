@@ -1,0 +1,32 @@
+kind: test
+apiVersion: api.ibm.com/v1
+metadata:
+  name: Sanity
+  namespace: wM_NoAuth_Petstore
+  version: '1.0'
+  tags:
+    - sanity-test
+spec:
+  api:
+    $ref: 'wM_NoAuth_Petstore:PetstoreAPI:1.0'
+  request:
+    - method: GET
+      resource: /pet/findByStatus
+      headers: []
+      auth:
+        noauth: true
+      assertions:
+        - $ref: wM_NoAuth_Petstore:Basic_Assertion:1.0
+      parameters:
+        - key: status
+          value: available
+    - method: GET
+      resource: /pet/{petId}
+      headers: []
+      auth:
+        noauth: true
+      assertions:
+        - $ref: wM_NoAuth_Petstore:Basic_Assertion:1.0
+      parameters:
+        - key: petId
+          value: 1
