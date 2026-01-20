@@ -1,2 +1,0 @@
-
-This project creates a SOAP service with SOAP proxy, along with Product and Plan publishes to datapower-api gateway.
