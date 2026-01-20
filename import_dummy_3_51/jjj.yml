@@ -1,0 +1,10 @@
+kind: test
+apiVersion: api.ibm.com/v1
+metadata:
+  name: jjj
+  namespace: dem0
+  version: '1.0'
+  tags: []
+spec:
+  api:
+    $endpoint: ""
