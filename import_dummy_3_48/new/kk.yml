@@ -8,6 +8,6 @@ metadata:
   type: REST
 spec:
   api-spec:
-    $path: ./kk-spec.yml
+    $path: ../kk-spec-2.yml
   uriSchemes:
     $ref: dem0:new:1.0
