@@ -1,4 +1,4 @@
-kind: assertion
+ssekind: assertion
 apiVersion: api.ibm.com/v1
 metadata:
   name: assertion_1761287879133
