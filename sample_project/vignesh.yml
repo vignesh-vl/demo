@@ -1,0 +1,11 @@
+kind: API
+apiVersion: api.ibm.com/v1
+metadata:
+  name: vignesh
+  namespace: sample_project
+  version: '1.0'
+  tags: []
+  type: REST
+spec:
+  api-spec:
+    $path: ./vignesh-spec.json
