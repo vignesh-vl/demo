@@ -1,0 +1,11 @@
+kind: ExtractIdentity
+metadata:
+  name: extractIdentity-hostip
+  namespace: security
+  version: 1
+  labels:
+    gatewayTypes:
+      - webMethods
+spec:
+  namespace: ""
+  hostname: {}
