@@ -11,3 +11,7 @@ projects:
     description: this is a sample project
     tags: []
     lastUpdated: 1768907014756
+  import_dummy:
+    description: ''
+    tags: []
+    lastUpdated: 1768907530416
