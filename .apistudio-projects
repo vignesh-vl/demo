@@ -7,3 +7,7 @@ projects:
     description: ''
     tags: []
     lastUpdated: 1747909102948
+  sample_project:
+    description: this is a sample project
+    tags: []
+    lastUpdated: 1768907014756
