@@ -1,0 +1,17 @@
+kind: Invoke
+apiVersion: api.ibm.com/v1
+metadata:
+  name: Invoke-1
+  namespace: dem0
+  version: '1.0'
+  tags: []
+  labels:
+    gatewayTypes:
+      - nano
+spec:
+  endpoint:
+    http:
+      target:
+        timeout: 30
+      verb: CUSTOM
+  input: hhhhs
