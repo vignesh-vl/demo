@@ -1,0 +1,15 @@
+kind: environment
+metadata:
+  version: '1.0'
+  namespace: import_dummy_3_46
+  name: vignesh-1_0-environment-1
+  tags: []
+apiVersion: api.ibm.com/v1
+spec:
+  variables:
+    - key: basic_auth_username
+      isSecret: true
+      value: ''
+    - key: basic_auth_password
+      isSecret: true
+      value: ''

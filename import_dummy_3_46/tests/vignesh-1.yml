@@ -1,0 +1,616 @@
+kind: test
+apiVersion: api.ibm.com/v1
+metadata:
+  namespace: import_dummy_3_46
+  name: vignesh-1
+  version: '1.0'
+  tags: []
+spec:
+  api:
+    $ref: control-plane-apis:Runtime management:1.0
+  environment:
+    $ref: import_dummy_3_46:vignesh-1_0-environment:1.0
+  request:
+    - method: POST
+      resource: /v1/runtimes
+      headers:
+        - key: accept
+          value: application/json
+        - key: content-type
+          value: application/json
+      auth:
+        basicAuth:
+          username: ${basic_auth_username}
+          password: ${basic_auth_password}
+      payload:
+        raw:
+          json: |-
+            {
+              "name": "PRIVATE_CLOUD_APIGW_Op",
+              "description": "This is a private cloud API Gateway runtime.",
+              "tags": [
+                "Dev"
+              ],
+              "region": "us",
+              "location": "Denver",
+              "host": "192.168.24.25",
+              "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEkAAABRCAIAAAARlBx9AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAPmSURBVHhe7dhNctswDEBhXqe7Lnvv3qK3iOP/uDdox4UEGqIeJQqWZTpVi/nWBt4oM5EdfvbmUnBRrvkY86GG51xwVpxTQdp2KXO3sSe1aBtjwNv2/Icmcy54pO1SEMNcbexJLfrQZBiTOt3aLmXPD5M5F8x4aNp2KXOHybAnVfmhTbc9Nex6+pZDmJj30CbaFg9DxpipMBnGpDSs1LZIGI7264WxjTEQ205DbbFqVhhOfMSDD22g7Z4qmSVjcveGCQvrtTkfF9Y/WyyKwxJIw2RiW6EKy+qLXVkJxLCu7RgGHxc+/eWQkcvDbm3Z/Pr+BZ/+coiBfpiMtg2NtH3CPIEkNRg20fZX5I2FTbd98rxCmKvt0+aVw0Te1rxeoE3h01+uHCasrffqhCqDT3+52JVVKWnrVSkkpfDpL4ee1N1tAp/+Wr9/fEWSmdMmsKAy6UkhyQy0yfdIlAzCvqdCDCBJHdEWvyD72gQuWBCuL0OVkLCmzXoat0FDAW6aDefeJa9qHLUtGwSU4Uon3PeIwbDj8RBiTX9wvQdOz+GgBfXC2io12HbG3U7VYgCPa7DtbHC0H7bWkVcpaeuSDC72w9Y6BsPEOtpYpf63uWFrHUgyXVv8EbeFi/2wtQ4kmdAlJYOL/bC1DiSpQ9M2NLjYD1vryKtae7TF31hwsR+21pFXHQ4NaYs9KVzsh6115FXracur1JJtWFkNksw/0xZ/zVxNm/VE7eBoJ6ysBkkmxJreHHG0E1ZWgySjbfE7ucHRTlhZDZL2jZ2QNoYJHO2EldXkVY39Wtq6pLZKraENSWYVbVmVim3dT0UtHO2EldUgyYTYEye+UONoJ6ysBkkmWE8KRzthZTVIMqts2+5aK2uLVWtq6yU1do01tCHJNG23L+RmL3C3B1ZWgyQTtMReyVI4fRJWVoMkE9ADuL4MK6tBkploEwgowMpqkHTzPt0m0DAGK6tBkti2ptvaL0WuPKysRnssybCt9/Uutd+hJIeV1SBpu40CG1T3n57Qk8LKapBkAk73QJLBymqQZOa0CVQprHweNIyZ2SavcAgTuGBBY391IzbK2bYdeB/N8nDQI2LM/T2pvK3JGCzpJP9PlmrrYu7oEewR7zeBd0OSMWZeWy9muZ5U0pYd7edpY4zg0WXsEYhpvHcCrpwtb2OJ4LmTGCMYo5Ik80hbfNPJX3Y6vHUSSxRLVBbT9+Zvm8pQvNWDJYoligHwlsrbuqfxnBLBDMMSxQDo9ZhN2+ZoELzvLmwwzDAMyDFGSZIJbBC8bAY2GDakeH2OJSrt6WykjWfNwIAUA1I8PccMwxKz6YTrWud6/QMDnAYz3wg70wAAAABJRU5ErkJggg==",
+              "type": "WEBMETHODS_API_GATEWAY",
+              "deploymentType": "PRIVATE_CLOUD",
+              "heartbeatInterval": 6000,
+              "publishAssets": true,
+              "syncAssets": true,
+              "sendMetrics": true
+            }
+      parameters: []
+      assertions:
+        $ref: default:POST-v1-runtimes-200:1.0
+    - method: POST
+      resource: /v1/runtimes
+      headers:
+        - key: accept
+          value: application/json
+        - key: content-type
+          value: application/json
+      auth:
+        basicAuth:
+          username: ${basic_auth_username}
+          password: ${basic_auth_password}
+      payload:
+        raw:
+          json: |-
+            {
+              "name": "PRIVATE_CLOUD_APIGW_Op",
+              "description": "This is a private cloud API Gateway runtime.",
+              "tags": [
+                "Dev"
+              ],
+              "region": "us",
+              "location": "Denver",
+              "host": "192.168.24.25",
+              "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEkAAABRCAIAAAARlBx9AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAPmSURBVHhe7dhNctswDEBhXqe7Lnvv3qK3iOP/uDdox4UEGqIeJQqWZTpVi/nWBt4oM5EdfvbmUnBRrvkY86GG51xwVpxTQdp2KXO3sSe1aBtjwNv2/Icmcy54pO1SEMNcbexJLfrQZBiTOt3aLmXPD5M5F8x4aNp2KXOHybAnVfmhTbc9Nex6+pZDmJj30CbaFg9DxpipMBnGpDSs1LZIGI7264WxjTEQ205DbbFqVhhOfMSDD22g7Z4qmSVjcveGCQvrtTkfF9Y/WyyKwxJIw2RiW6EKy+qLXVkJxLCu7RgGHxc+/eWQkcvDbm3Z/Pr+BZ/+coiBfpiMtg2NtH3CPIEkNRg20fZX5I2FTbd98rxCmKvt0+aVw0Te1rxeoE3h01+uHCasrffqhCqDT3+52JVVKWnrVSkkpfDpL4ee1N1tAp/+Wr9/fEWSmdMmsKAy6UkhyQy0yfdIlAzCvqdCDCBJHdEWvyD72gQuWBCuL0OVkLCmzXoat0FDAW6aDefeJa9qHLUtGwSU4Uon3PeIwbDj8RBiTX9wvQdOz+GgBfXC2io12HbG3U7VYgCPa7DtbHC0H7bWkVcpaeuSDC72w9Y6BsPEOtpYpf63uWFrHUgyXVv8EbeFi/2wtQ4kmdAlJYOL/bC1DiSpQ9M2NLjYD1vryKtae7TF31hwsR+21pFXHQ4NaYs9KVzsh6115FXracur1JJtWFkNksw/0xZ/zVxNm/VE7eBoJ6ysBkkmxJreHHG0E1ZWgySjbfE7ucHRTlhZDZL2jZ2QNoYJHO2EldXkVY39Wtq6pLZKraENSWYVbVmVim3dT0UtHO2EldUgyYTYEye+UONoJ6ysBkkmWE8KRzthZTVIMqts2+5aK2uLVWtq6yU1do01tCHJNG23L+RmL3C3B1ZWgyQTtMReyVI4fRJWVoMkE9ADuL4MK6tBkploEwgowMpqkHTzPt0m0DAGK6tBkti2ptvaL0WuPKysRnssybCt9/Uutd+hJIeV1SBpu40CG1T3n57Qk8LKapBkAk73QJLBymqQZOa0CVQprHweNIyZ2SavcAgTuGBBY391IzbK2bYdeB/N8nDQI2LM/T2pvK3JGCzpJP9PlmrrYu7oEewR7zeBd0OSMWZeWy9muZ5U0pYd7edpY4zg0WXsEYhpvHcCrpwtb2OJ4LmTGCMYo5Ik80hbfNPJX3Y6vHUSSxRLVBbT9+Zvm8pQvNWDJYoligHwlsrbuqfxnBLBDMMSxQDo9ZhN2+ZoELzvLmwwzDAMyDFGSZIJbBC8bAY2GDakeH2OJSrt6WykjWfNwIAUA1I8PccMwxKz6YTrWud6/QMDnAYz3wg70wAAAABJRU5ErkJggg==",
+              "type": "WEBMETHODS_API_GATEWAY",
+              "deploymentType": "PRIVATE_CLOUD",
+              "heartbeatInterval": 6000,
+              "publishAssets": true,
+              "syncAssets": true,
+              "sendMetrics": true
+            }
+      parameters: []
+      assertions:
+        $ref: default:POST-v1-runtimes-201:1.0
+    - method: POST
+      resource: /v1/runtimes
+      headers:
+        - key: accept
+          value: application/json
+        - key: content-type
+          value: application/json
+      auth:
+        basicAuth:
+          username: ${basic_auth_username}
+          password: ${basic_auth_password}
+      payload:
+        raw:
+          json: |-
+            {
+              "key": "invalid payload"
+            }
+      parameters: []
+      assertions:
+        $ref: default:POST-v1-runtimes-400:1.0
+    - method: POST
+      resource: /v1/runtimes
+      headers:
+        - key: accept
+          value: application/json
+        - key: content-type
+          value: application/json
+      auth:
+        basicAuth:
+          username: ${basic_auth_username}
+          password: ${basic_auth_password}
+      payload:
+        raw:
+          json: |-
+            {
+              "name": "PRIVATE_CLOUD_APIGW_Op",
+              "description": "This is a private cloud API Gateway runtime.",
+              "tags": [
+                "Dev"
+              ],
+              "region": "us",
+              "location": "Denver",
+              "host": "192.168.24.25",
+              "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEkAAABRCAIAAAARlBx9AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAPmSURBVHhe7dhNctswDEBhXqe7Lnvv3qK3iOP/uDdox4UEGqIeJQqWZTpVi/nWBt4oM5EdfvbmUnBRrvkY86GG51xwVpxTQdp2KXO3sSe1aBtjwNv2/Icmcy54pO1SEMNcbexJLfrQZBiTOt3aLmXPD5M5F8x4aNp2KXOHybAnVfmhTbc9Nex6+pZDmJj30CbaFg9DxpipMBnGpDSs1LZIGI7264WxjTEQ205DbbFqVhhOfMSDD22g7Z4qmSVjcveGCQvrtTkfF9Y/WyyKwxJIw2RiW6EKy+qLXVkJxLCu7RgGHxc+/eWQkcvDbm3Z/Pr+BZ/+coiBfpiMtg2NtH3CPIEkNRg20fZX5I2FTbd98rxCmKvt0+aVw0Te1rxeoE3h01+uHCasrffqhCqDT3+52JVVKWnrVSkkpfDpL4ee1N1tAp/+Wr9/fEWSmdMmsKAy6UkhyQy0yfdIlAzCvqdCDCBJHdEWvyD72gQuWBCuL0OVkLCmzXoat0FDAW6aDefeJa9qHLUtGwSU4Uon3PeIwbDj8RBiTX9wvQdOz+GgBfXC2io12HbG3U7VYgCPa7DtbHC0H7bWkVcpaeuSDC72w9Y6BsPEOtpYpf63uWFrHUgyXVv8EbeFi/2wtQ4kmdAlJYOL/bC1DiSpQ9M2NLjYD1vryKtae7TF31hwsR+21pFXHQ4NaYs9KVzsh6115FXracur1JJtWFkNksw/0xZ/zVxNm/VE7eBoJ6ysBkkmxJreHHG0E1ZWgySjbfE7ucHRTlhZDZL2jZ2QNoYJHO2EldXkVY39Wtq6pLZKraENSWYVbVmVim3dT0UtHO2EldUgyYTYEye+UONoJ6ysBkkmWE8KRzthZTVIMqts2+5aK2uLVWtq6yU1do01tCHJNG23L+RmL3C3B1ZWgyQTtMReyVI4fRJWVoMkE9ADuL4MK6tBkploEwgowMpqkHTzPt0m0DAGK6tBkti2ptvaL0WuPKysRnssybCt9/Uutd+hJIeV1SBpu40CG1T3n57Qk8LKapBkAk73QJLBymqQZOa0CVQprHweNIyZ2SavcAgTuGBBY391IzbK2bYdeB/N8nDQI2LM/T2pvK3JGCzpJP9PlmrrYu7oEewR7zeBd0OSMWZeWy9muZ5U0pYd7edpY4zg0WXsEYhpvHcCrpwtb2OJ4LmTGCMYo5Ik80hbfNPJX3Y6vHUSSxRLVBbT9+Zvm8pQvNWDJYoligHwlsrbuqfxnBLBDMMSxQDo9ZhN2+ZoELzvLmwwzDAMyDFGSZIJbBC8bAY2GDakeH2OJSrt6WykjWfNwIAUA1I8PccMwxKz6YTrWud6/QMDnAYz3wg70wAAAABJRU5ErkJggg==",
+              "type": "WEBMETHODS_API_GATEWAY",
+              "deploymentType": "PRIVATE_CLOUD",
+              "heartbeatInterval": 6000,
+              "publishAssets": true,
+              "syncAssets": true,
+              "sendMetrics": true
+            }
+      parameters: []
+      assertions:
+        $ref: default:POST-v1-runtimes-401:1.0
+    - method: GET
+      resource: /v1/runtimes
+      headers:
+        - key: accept
+          value: application/json
+      auth:
+        basicAuth:
+          username: ${basic_auth_username}
+          password: ${basic_auth_password}
+      parameters:
+        - key: page
+          value: 0
+        - key: size
+          value: 0
+        - key: sort
+          value:
+            - string
+      assertions:
+        $ref: default:GET-v1-runtimes-200:1.0
+    - method: GET
+      resource: /v1/runtimes
+      headers:
+        - key: accept
+          value: application/json
+      auth:
+        basicAuth:
+          username: ${basic_auth_username}
+          password: ${basic_auth_password}
+      parameters:
+        - key: page
+          value: 0
+        - key: size
+          value: 0
+        - key: sort
+          value:
+            - string
+      assertions:
+        $ref: default:GET-v1-runtimes-401:1.0
+    - method: GET
+      resource: /v1/runtimes/512f725f-9e19-415d-99f8-b555a17a2744
+      headers:
+        - key: accept
+          value: application/json
+      auth:
+        basicAuth:
+          username: ${basic_auth_username}
+          password: ${basic_auth_password}
+      parameters: []
+      assertions:
+        $ref: default:GET-v1-runtimes-512f725f-9e19-415d-99f8-b555a17a2744-200:1.0
+    - method: GET
+      resource: /v1/runtimes/512f725f-9e19-415d-99f8-b555a17a2744
+      headers:
+        - key: accept
+          value: application/json
+      auth:
+        basicAuth:
+          username: ${basic_auth_username}
+          password: ${basic_auth_password}
+      parameters: []
+      assertions:
+        $ref: default:GET-v1-runtimes-512f725f-9e19-415d-99f8-b555a17a2744-401:1.0
+    - method: PUT
+      resource: /v1/runtimes/512f725f-9e19-415d-99f8-b555a17a2744
+      headers:
+        - key: accept
+          value: application/json
+        - key: content-type
+          value: application/json
+      auth:
+        basicAuth:
+          username: ${basic_auth_username}
+          password: ${basic_auth_password}
+      payload:
+        raw:
+          json: |-
+            {
+              "name": "PRIVATE_CLOUD_APIGW_Op",
+              "description": "This is a private cloud API Gateway runtime.",
+              "tags": [
+                "Dev"
+              ],
+              "region": "us",
+              "location": "Denver",
+              "host": "192.168.24.25",
+              "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEkAAABRCAIAAAARlBx9AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAPmSURBVHhe7dhNctswDEBhXqe7Lnvv3qK3iOP/uDdox4UEGqIeJQqWZTpVi/nWBt4oM5EdfvbmUnBRrvkY86GG51xwVpxTQdp2KXO3sSe1aBtjwNv2/Icmcy54pO1SEMNcbexJLfrQZBiTOt3aLmXPD5M5F8x4aNp2KXOHybAnVfmhTbc9Nex6+pZDmJj30CbaFg9DxpipMBnGpDSs1LZIGI7264WxjTEQ205DbbFqVhhOfMSDD22g7Z4qmSVjcveGCQvrtTkfF9Y/WyyKwxJIw2RiW6EKy+qLXVkJxLCu7RgGHxc+/eWQkcvDbm3Z/Pr+BZ/+coiBfpiMtg2NtH3CPIEkNRg20fZX5I2FTbd98rxCmKvt0+aVw0Te1rxeoE3h01+uHCasrffqhCqDT3+52JVVKWnrVSkkpfDpL4ee1N1tAp/+Wr9/fEWSmdMmsKAy6UkhyQy0yfdIlAzCvqdCDCBJHdEWvyD72gQuWBCuL0OVkLCmzXoat0FDAW6aDefeJa9qHLUtGwSU4Uon3PeIwbDj8RBiTX9wvQdOz+GgBfXC2io12HbG3U7VYgCPa7DtbHC0H7bWkVcpaeuSDC72w9Y6BsPEOtpYpf63uWFrHUgyXVv8EbeFi/2wtQ4kmdAlJYOL/bC1DiSpQ9M2NLjYD1vryKtae7TF31hwsR+21pFXHQ4NaYs9KVzsh6115FXracur1JJtWFkNksw/0xZ/zVxNm/VE7eBoJ6ysBkkmxJreHHG0E1ZWgySjbfE7ucHRTlhZDZL2jZ2QNoYJHO2EldXkVY39Wtq6pLZKraENSWYVbVmVim3dT0UtHO2EldUgyYTYEye+UONoJ6ysBkkmWE8KRzthZTVIMqts2+5aK2uLVWtq6yU1do01tCHJNG23L+RmL3C3B1ZWgyQTtMReyVI4fRJWVoMkE9ADuL4MK6tBkploEwgowMpqkHTzPt0m0DAGK6tBkti2ptvaL0WuPKysRnssybCt9/Uutd+hJIeV1SBpu40CG1T3n57Qk8LKapBkAk73QJLBymqQZOa0CVQprHweNIyZ2SavcAgTuGBBY391IzbK2bYdeB/N8nDQI2LM/T2pvK3JGCzpJP9PlmrrYu7oEewR7zeBd0OSMWZeWy9muZ5U0pYd7edpY4zg0WXsEYhpvHcCrpwtb2OJ4LmTGCMYo5Ik80hbfNPJX3Y6vHUSSxRLVBbT9+Zvm8pQvNWDJYoligHwlsrbuqfxnBLBDMMSxQDo9ZhN2+ZoELzvLmwwzDAMyDFGSZIJbBC8bAY2GDakeH2OJSrt6WykjWfNwIAUA1I8PccMwxKz6YTrWud6/QMDnAYz3wg70wAAAABJRU5ErkJggg==",
+              "type": "WEBMETHODS_API_GATEWAY",
+              "deploymentType": "PRIVATE_CLOUD",
+              "heartbeatInterval": 6000,
+              "publishAssets": true,
+              "syncAssets": true,
+              "sendMetrics": true
+            }
+      parameters: []
+      assertions:
+        $ref: default:PUT-v1-runtimes-512f725f-9e19-415d-99f8-b555a17a2744-200:1.0
+    - method: PUT
+      resource: /v1/runtimes/512f725f-9e19-415d-99f8-b555a17a2744
+      headers:
+        - key: accept
+          value: application/json
+        - key: content-type
+          value: application/json
+      auth:
+        basicAuth:
+          username: ${basic_auth_username}
+          password: ${basic_auth_password}
+      payload:
+        raw:
+          json: |-
+            {
+              "key": "invalid payload"
+            }
+      parameters: []
+      assertions:
+        $ref: default:PUT-v1-runtimes-512f725f-9e19-415d-99f8-b555a17a2744-400:1.0
+    - method: PUT
+      resource: /v1/runtimes/512f725f-9e19-415d-99f8-b555a17a2744
+      headers:
+        - key: accept
+          value: application/json
+        - key: content-type
+          value: application/json
+      auth:
+        basicAuth:
+          username: ${basic_auth_username}
+          password: ${basic_auth_password}
+      payload:
+        raw:
+          json: |-
+            {
+              "name": "PRIVATE_CLOUD_APIGW_Op",
+              "description": "This is a private cloud API Gateway runtime.",
+              "tags": [
+                "Dev"
+              ],
+              "region": "us",
+              "location": "Denver",
+              "host": "192.168.24.25",
+              "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEkAAABRCAIAAAARlBx9AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAPmSURBVHhe7dhNctswDEBhXqe7Lnvv3qK3iOP/uDdox4UEGqIeJQqWZTpVi/nWBt4oM5EdfvbmUnBRrvkY86GG51xwVpxTQdp2KXO3sSe1aBtjwNv2/Icmcy54pO1SEMNcbexJLfrQZBiTOt3aLmXPD5M5F8x4aNp2KXOHybAnVfmhTbc9Nex6+pZDmJj30CbaFg9DxpipMBnGpDSs1LZIGI7264WxjTEQ205DbbFqVhhOfMSDD22g7Z4qmSVjcveGCQvrtTkfF9Y/WyyKwxJIw2RiW6EKy+qLXVkJxLCu7RgGHxc+/eWQkcvDbm3Z/Pr+BZ/+coiBfpiMtg2NtH3CPIEkNRg20fZX5I2FTbd98rxCmKvt0+aVw0Te1rxeoE3h01+uHCasrffqhCqDT3+52JVVKWnrVSkkpfDpL4ee1N1tAp/+Wr9/fEWSmdMmsKAy6UkhyQy0yfdIlAzCvqdCDCBJHdEWvyD72gQuWBCuL0OVkLCmzXoat0FDAW6aDefeJa9qHLUtGwSU4Uon3PeIwbDj8RBiTX9wvQdOz+GgBfXC2io12HbG3U7VYgCPa7DtbHC0H7bWkVcpaeuSDC72w9Y6BsPEOtpYpf63uWFrHUgyXVv8EbeFi/2wtQ4kmdAlJYOL/bC1DiSpQ9M2NLjYD1vryKtae7TF31hwsR+21pFXHQ4NaYs9KVzsh6115FXracur1JJtWFkNksw/0xZ/zVxNm/VE7eBoJ6ysBkkmxJreHHG0E1ZWgySjbfE7ucHRTlhZDZL2jZ2QNoYJHO2EldXkVY39Wtq6pLZKraENSWYVbVmVim3dT0UtHO2EldUgyYTYEye+UONoJ6ysBkkmWE8KRzthZTVIMqts2+5aK2uLVWtq6yU1do01tCHJNG23L+RmL3C3B1ZWgyQTtMReyVI4fRJWVoMkE9ADuL4MK6tBkploEwgowMpqkHTzPt0m0DAGK6tBkti2ptvaL0WuPKysRnssybCt9/Uutd+hJIeV1SBpu40CG1T3n57Qk8LKapBkAk73QJLBymqQZOa0CVQprHweNIyZ2SavcAgTuGBBY391IzbK2bYdeB/N8nDQI2LM/T2pvK3JGCzpJP9PlmrrYu7oEewR7zeBd0OSMWZeWy9muZ5U0pYd7edpY4zg0WXsEYhpvHcCrpwtb2OJ4LmTGCMYo5Ik80hbfNPJX3Y6vHUSSxRLVBbT9+Zvm8pQvNWDJYoligHwlsrbuqfxnBLBDMMSxQDo9ZhN2+ZoELzvLmwwzDAMyDFGSZIJbBC8bAY2GDakeH2OJSrt6WykjWfNwIAUA1I8PccMwxKz6YTrWud6/QMDnAYz3wg70wAAAABJRU5ErkJggg==",
+              "type": "WEBMETHODS_API_GATEWAY",
+              "deploymentType": "PRIVATE_CLOUD",
+              "heartbeatInterval": 6000,
+              "publishAssets": true,
+              "syncAssets": true,
+              "sendMetrics": true
+            }
+      parameters: []
+      assertions:
+        $ref: default:PUT-v1-runtimes-512f725f-9e19-415d-99f8-b555a17a2744-401:1.0
+    - method: DELETE
+      resource: /v1/runtimes/512f725f-9e19-415d-99f8-b555a17a2744
+      headers:
+        - key: accept
+          value: application/json
+      auth:
+        basicAuth:
+          username: ${basic_auth_username}
+          password: ${basic_auth_password}
+      parameters: []
+      assertions:
+        $ref: >-
+          default:DELETE-v1-runtimes-512f725f-9e19-415d-99f8-b555a17a2744-200:1.0
+    - method: DELETE
+      resource: /v1/runtimes/512f725f-9e19-415d-99f8-b555a17a2744
+      headers:
+        - key: accept
+          value: application/json
+      auth:
+        basicAuth:
+          username: ${basic_auth_username}
+          password: ${basic_auth_password}
+      parameters: []
+      assertions:
+        $ref: >-
+          default:DELETE-v1-runtimes-512f725f-9e19-415d-99f8-b555a17a2744-401:1.0
+    - method: POST
+      resource: /v1/runtimes/512f725f-9e19-415d-99f8-b555a17a2744/audit
+      headers:
+        - key: accept
+          value: application/json
+        - key: content-type
+          value: application/json
+      auth:
+        basicAuth:
+          username: ${basic_auth_username}
+          password: ${basic_auth_password}
+      payload:
+        raw:
+          json: |-
+            {
+              "types": [
+                "API"
+              ]
+            }
+      parameters: []
+      assertions:
+        $ref: >-
+          default:POST-v1-runtimes-512f725f-9e19-415d-99f8-b555a17a2744-audit-201:1.0
+    - method: POST
+      resource: /v1/runtimes/512f725f-9e19-415d-99f8-b555a17a2744/audit
+      headers:
+        - key: accept
+          value: application/json
+        - key: content-type
+          value: application/json
+      auth:
+        basicAuth:
+          username: ${basic_auth_username}
+          password: ${basic_auth_password}
+      payload:
+        raw:
+          json: |-
+            {
+              "key": "invalid payload"
+            }
+      parameters: []
+      assertions:
+        $ref: >-
+          default:POST-v1-runtimes-512f725f-9e19-415d-99f8-b555a17a2744-audit-400:1.0
+    - method: POST
+      resource: /v1/runtimes/512f725f-9e19-415d-99f8-b555a17a2744/audit
+      headers:
+        - key: accept
+          value: application/json
+        - key: content-type
+          value: application/json
+      auth:
+        basicAuth:
+          username: ${basic_auth_username}
+          password: ${basic_auth_password}
+      payload:
+        raw:
+          json: |-
+            {
+              "types": [
+                "API"
+              ]
+            }
+      parameters: []
+      assertions:
+        $ref: >-
+          default:POST-v1-runtimes-512f725f-9e19-415d-99f8-b555a17a2744-audit-401:1.0
+    - method: POST
+      resource: /v2/runtimes
+      headers:
+        - key: accept
+          value: application/json
+        - key: content-type
+          value: application/json
+      auth:
+        basicAuth:
+          username: ${basic_auth_username}
+          password: ${basic_auth_password}
+      payload:
+        raw:
+          json: |-
+            {
+              "name": "PRIVATE_CLOUD_APIGW_Op",
+              "description": "This is a private cloud API Gateway runtime.",
+              "tags": [
+                "Dev"
+              ],
+              "region": "us",
+              "location": "Denver",
+              "host": "192.168.24.25",
+              "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEkAAABRCAIAAAARlBx9AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAPmSURBVHhe7dhNctswDEBhXqe7Lnvv3qK3iOP/uDdox4UEGqIeJQqWZTpVi/nWBt4oM5EdfvbmUnBRrvkY86GG51xwVpxTQdp2KXO3sSe1aBtjwNv2/Icmcy54pO1SEMNcbexJLfrQZBiTOt3aLmXPD5M5F8x4aNp2KXOHybAnVfmhTbc9Nex6+pZDmJj30CbaFg9DxpipMBnGpDSs1LZIGI7264WxjTEQ205DbbFqVhhOfMSDD22g7Z4qmSVjcveGCQvrtTkfF9Y/WyyKwxJIw2RiW6EKy+qLXVkJxLCu7RgGHxc+/eWQkcvDbm3Z/Pr+BZ/+coiBfpiMtg2NtH3CPIEkNRg20fZX5I2FTbd98rxCmKvt0+aVw0Te1rxeoE3h01+uHCasrffqhCqDT3+52JVVKWnrVSkkpfDpL4ee1N1tAp/+Wr9/fEWSmdMmsKAy6UkhyQy0yfdIlAzCvqdCDCBJHdEWvyD72gQuWBCuL0OVkLCmzXoat0FDAW6aDefeJa9qHLUtGwSU4Uon3PeIwbDj8RBiTX9wvQdOz+GgBfXC2io12HbG3U7VYgCPa7DtbHC0H7bWkVcpaeuSDC72w9Y6BsPEOtpYpf63uWFrHUgyXVv8EbeFi/2wtQ4kmdAlJYOL/bC1DiSpQ9M2NLjYD1vryKtae7TF31hwsR+21pFXHQ4NaYs9KVzsh6115FXracur1JJtWFkNksw/0xZ/zVxNm/VE7eBoJ6ysBkkmxJreHHG0E1ZWgySjbfE7ucHRTlhZDZL2jZ2QNoYJHO2EldXkVY39Wtq6pLZKraENSWYVbVmVim3dT0UtHO2EldUgyYTYEye+UONoJ6ysBkkmWE8KRzthZTVIMqts2+5aK2uLVWtq6yU1do01tCHJNG23L+RmL3C3B1ZWgyQTtMReyVI4fRJWVoMkE9ADuL4MK6tBkploEwgowMpqkHTzPt0m0DAGK6tBkti2ptvaL0WuPKysRnssybCt9/Uutd+hJIeV1SBpu40CG1T3n57Qk8LKapBkAk73QJLBymqQZOa0CVQprHweNIyZ2SavcAgTuGBBY391IzbK2bYdeB/N8nDQI2LM/T2pvK3JGCzpJP9PlmrrYu7oEewR7zeBd0OSMWZeWy9muZ5U0pYd7edpY4zg0WXsEYhpvHcCrpwtb2OJ4LmTGCMYo5Ik80hbfNPJX3Y6vHUSSxRLVBbT9+Zvm8pQvNWDJYoligHwlsrbuqfxnBLBDMMSxQDo9ZhN2+ZoELzvLmwwzDAMyDFGSZIJbBC8bAY2GDakeH2OJSrt6WykjWfNwIAUA1I8PccMwxKz6YTrWud6/QMDnAYz3wg70wAAAABJRU5ErkJggg==",
+              "type": "WEBMETHODS_API_GATEWAY",
+              "deploymentType": "PRIVATE_CLOUD",
+              "heartbeatInterval": 6000,
+              "publishAssets": true,
+              "syncAssets": true,
+              "sendMetrics": true
+            }
+      parameters: []
+      assertions:
+        $ref: default:POST-v2-runtimes-201:1.0
+    - method: POST
+      resource: /v2/runtimes
+      headers:
+        - key: accept
+          value: application/json
+        - key: content-type
+          value: application/json
+      auth:
+        basicAuth:
+          username: ${basic_auth_username}
+          password: ${basic_auth_password}
+      payload:
+        raw:
+          json: |-
+            {
+              "key": "invalid payload"
+            }
+      parameters: []
+      assertions:
+        $ref: default:POST-v2-runtimes-400:1.0
+    - method: POST
+      resource: /v2/runtimes
+      headers:
+        - key: accept
+          value: application/json
+        - key: content-type
+          value: application/json
+      auth:
+        basicAuth:
+          username: ${basic_auth_username}
+          password: ${basic_auth_password}
+      payload:
+        raw:
+          json: |-
+            {
+              "name": "PRIVATE_CLOUD_APIGW_Op",
+              "description": "This is a private cloud API Gateway runtime.",
+              "tags": [
+                "Dev"
+              ],
+              "region": "us",
+              "location": "Denver",
+              "host": "192.168.24.25",
+              "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEkAAABRCAIAAAARlBx9AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAPmSURBVHhe7dhNctswDEBhXqe7Lnvv3qK3iOP/uDdox4UEGqIeJQqWZTpVi/nWBt4oM5EdfvbmUnBRrvkY86GG51xwVpxTQdp2KXO3sSe1aBtjwNv2/Icmcy54pO1SEMNcbexJLfrQZBiTOt3aLmXPD5M5F8x4aNp2KXOHybAnVfmhTbc9Nex6+pZDmJj30CbaFg9DxpipMBnGpDSs1LZIGI7264WxjTEQ205DbbFqVhhOfMSDD22g7Z4qmSVjcveGCQvrtTkfF9Y/WyyKwxJIw2RiW6EKy+qLXVkJxLCu7RgGHxc+/eWQkcvDbm3Z/Pr+BZ/+coiBfpiMtg2NtH3CPIEkNRg20fZX5I2FTbd98rxCmKvt0+aVw0Te1rxeoE3h01+uHCasrffqhCqDT3+52JVVKWnrVSkkpfDpL4ee1N1tAp/+Wr9/fEWSmdMmsKAy6UkhyQy0yfdIlAzCvqdCDCBJHdEWvyD72gQuWBCuL0OVkLCmzXoat0FDAW6aDefeJa9qHLUtGwSU4Uon3PeIwbDj8RBiTX9wvQdOz+GgBfXC2io12HbG3U7VYgCPa7DtbHC0H7bWkVcpaeuSDC72w9Y6BsPEOtpYpf63uWFrHUgyXVv8EbeFi/2wtQ4kmdAlJYOL/bC1DiSpQ9M2NLjYD1vryKtae7TF31hwsR+21pFXHQ4NaYs9KVzsh6115FXracur1JJtWFkNksw/0xZ/zVxNm/VE7eBoJ6ysBkkmxJreHHG0E1ZWgySjbfE7ucHRTlhZDZL2jZ2QNoYJHO2EldXkVY39Wtq6pLZKraENSWYVbVmVim3dT0UtHO2EldUgyYTYEye+UONoJ6ysBkkmWE8KRzthZTVIMqts2+5aK2uLVWtq6yU1do01tCHJNG23L+RmL3C3B1ZWgyQTtMReyVI4fRJWVoMkE9ADuL4MK6tBkploEwgowMpqkHTzPt0m0DAGK6tBkti2ptvaL0WuPKysRnssybCt9/Uutd+hJIeV1SBpu40CG1T3n57Qk8LKapBkAk73QJLBymqQZOa0CVQprHweNIyZ2SavcAgTuGBBY391IzbK2bYdeB/N8nDQI2LM/T2pvK3JGCzpJP9PlmrrYu7oEewR7zeBd0OSMWZeWy9muZ5U0pYd7edpY4zg0WXsEYhpvHcCrpwtb2OJ4LmTGCMYo5Ik80hbfNPJX3Y6vHUSSxRLVBbT9+Zvm8pQvNWDJYoligHwlsrbuqfxnBLBDMMSxQDo9ZhN2+ZoELzvLmwwzDAMyDFGSZIJbBC8bAY2GDakeH2OJSrt6WykjWfNwIAUA1I8PccMwxKz6YTrWud6/QMDnAYz3wg70wAAAABJRU5ErkJggg==",
+              "type": "WEBMETHODS_API_GATEWAY",
+              "deploymentType": "PRIVATE_CLOUD",
+              "heartbeatInterval": 6000,
+              "publishAssets": true,
+              "syncAssets": true,
+              "sendMetrics": true
+            }
+      parameters: []
+      assertions:
+        $ref: default:POST-v2-runtimes-401:1.0
+    - method: GET
+      resource: /v2/runtimes
+      headers:
+        - key: accept
+          value: application/json
+      auth:
+        basicAuth:
+          username: ${basic_auth_username}
+          password: ${basic_auth_password}
+      parameters:
+        - key: page
+          value: 0
+        - key: size
+          value: 0
+        - key: sort
+          value:
+            - string
+      assertions:
+        $ref: default:GET-v2-runtimes-200:1.0
+    - method: GET
+      resource: /v2/runtimes
+      headers:
+        - key: accept
+          value: application/json
+      auth:
+        basicAuth:
+          username: ${basic_auth_username}
+          password: ${basic_auth_password}
+      parameters:
+        - key: page
+          value: 0
+        - key: size
+          value: 0
+        - key: sort
+          value:
+            - string
+      assertions:
+        $ref: default:GET-v2-runtimes-401:1.0
+    - method: GET
+      resource: /v2/runtimes/512f725f-9e19-415d-99f8-b555a17a2744
+      headers:
+        - key: accept
+          value: application/json
+      auth:
+        basicAuth:
+          username: ${basic_auth_username}
+          password: ${basic_auth_password}
+      parameters: []
+      assertions:
+        $ref: default:GET-v2-runtimes-512f725f-9e19-415d-99f8-b555a17a2744-200:1.0
+    - method: GET
+      resource: /v2/runtimes/512f725f-9e19-415d-99f8-b555a17a2744
+      headers:
+        - key: accept
+          value: application/json
+      auth:
+        basicAuth:
+          username: ${basic_auth_username}
+          password: ${basic_auth_password}
+      parameters: []
+      assertions:
+        $ref: default:GET-v2-runtimes-512f725f-9e19-415d-99f8-b555a17a2744-401:1.0
+    - method: PUT
+      resource: /v2/runtimes/512f725f-9e19-415d-99f8-b555a17a2744
+      headers:
+        - key: accept
+          value: application/json
+        - key: content-type
+          value: application/json
+      auth:
+        basicAuth:
+          username: ${basic_auth_username}
+          password: ${basic_auth_password}
+      payload:
+        raw:
+          json: |-
+            {
+              "name": "PRIVATE_CLOUD_APIGW_Op",
+              "description": "This is a private cloud API Gateway runtime.",
+              "tags": [
+                "Dev"
+              ],
+              "region": "us",
+              "location": "Denver",
+              "host": "192.168.24.25",
+              "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEkAAABRCAIAAAARlBx9AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAPmSURBVHhe7dhNctswDEBhXqe7Lnvv3qK3iOP/uDdox4UEGqIeJQqWZTpVi/nWBt4oM5EdfvbmUnBRrvkY86GG51xwVpxTQdp2KXO3sSe1aBtjwNv2/Icmcy54pO1SEMNcbexJLfrQZBiTOt3aLmXPD5M5F8x4aNp2KXOHybAnVfmhTbc9Nex6+pZDmJj30CbaFg9DxpipMBnGpDSs1LZIGI7264WxjTEQ205DbbFqVhhOfMSDD22g7Z4qmSVjcveGCQvrtTkfF9Y/WyyKwxJIw2RiW6EKy+qLXVkJxLCu7RgGHxc+/eWQkcvDbm3Z/Pr+BZ/+coiBfpiMtg2NtH3CPIEkNRg20fZX5I2FTbd98rxCmKvt0+aVw0Te1rxeoE3h01+uHCasrffqhCqDT3+52JVVKWnrVSkkpfDpL4ee1N1tAp/+Wr9/fEWSmdMmsKAy6UkhyQy0yfdIlAzCvqdCDCBJHdEWvyD72gQuWBCuL0OVkLCmzXoat0FDAW6aDefeJa9qHLUtGwSU4Uon3PeIwbDj8RBiTX9wvQdOz+GgBfXC2io12HbG3U7VYgCPa7DtbHC0H7bWkVcpaeuSDC72w9Y6BsPEOtpYpf63uWFrHUgyXVv8EbeFi/2wtQ4kmdAlJYOL/bC1DiSpQ9M2NLjYD1vryKtae7TF31hwsR+21pFXHQ4NaYs9KVzsh6115FXracur1JJtWFkNksw/0xZ/zVxNm/VE7eBoJ6ysBkkmxJreHHG0E1ZWgySjbfE7ucHRTlhZDZL2jZ2QNoYJHO2EldXkVY39Wtq6pLZKraENSWYVbVmVim3dT0UtHO2EldUgyYTYEye+UONoJ6ysBkkmWE8KRzthZTVIMqts2+5aK2uLVWtq6yU1do01tCHJNG23L+RmL3C3B1ZWgyQTtMReyVI4fRJWVoMkE9ADuL4MK6tBkploEwgowMpqkHTzPt0m0DAGK6tBkti2ptvaL0WuPKysRnssybCt9/Uutd+hJIeV1SBpu40CG1T3n57Qk8LKapBkAk73QJLBymqQZOa0CVQprHweNIyZ2SavcAgTuGBBY391IzbK2bYdeB/N8nDQI2LM/T2pvK3JGCzpJP9PlmrrYu7oEewR7zeBd0OSMWZeWy9muZ5U0pYd7edpY4zg0WXsEYhpvHcCrpwtb2OJ4LmTGCMYo5Ik80hbfNPJX3Y6vHUSSxRLVBbT9+Zvm8pQvNWDJYoligHwlsrbuqfxnBLBDMMSxQDo9ZhN2+ZoELzvLmwwzDAMyDFGSZIJbBC8bAY2GDakeH2OJSrt6WykjWfNwIAUA1I8PccMwxKz6YTrWud6/QMDnAYz3wg70wAAAABJRU5ErkJggg==",
+              "type": "WEBMETHODS_API_GATEWAY",
+              "deploymentType": "PRIVATE_CLOUD",
+              "heartbeatInterval": 6000,
+              "publishAssets": true,
+              "syncAssets": true,
+              "sendMetrics": true
+            }
+      parameters: []
+      assertions:
+        $ref: default:PUT-v2-runtimes-512f725f-9e19-415d-99f8-b555a17a2744-200:1.0
+    - method: PUT
+      resource: /v2/runtimes/512f725f-9e19-415d-99f8-b555a17a2744
+      headers:
+        - key: accept
+          value: application/json
+        - key: content-type
+          value: application/json
+      auth:
+        basicAuth:
+          username: ${basic_auth_username}
+          password: ${basic_auth_password}
+      payload:
+        raw:
+          json: |-
+            {
+              "key": "invalid payload"
+            }
+      parameters: []
+      assertions:
+        $ref: default:PUT-v2-runtimes-512f725f-9e19-415d-99f8-b555a17a2744-400:1.0
+    - method: PUT
+      resource: /v2/runtimes/512f725f-9e19-415d-99f8-b555a17a2744
+      headers:
+        - key: accept
+          value: application/json
+        - key: content-type
+          value: application/json
+      auth:
+        basicAuth:
+          username: ${basic_auth_username}
+          password: ${basic_auth_password}
+      payload:
+        raw:
+          json: |-
+            {
+              "name": "PRIVATE_CLOUD_APIGW_Op",
+              "description": "This is a private cloud API Gateway runtime.",
+              "tags": [
+                "Dev"
+              ],
+              "region": "us",
+              "location": "Denver",
+              "host": "192.168.24.25",
+              "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEkAAABRCAIAAAARlBx9AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAPmSURBVHhe7dhNctswDEBhXqe7Lnvv3qK3iOP/uDdox4UEGqIeJQqWZTpVi/nWBt4oM5EdfvbmUnBRrvkY86GG51xwVpxTQdp2KXO3sSe1aBtjwNv2/Icmcy54pO1SEMNcbexJLfrQZBiTOt3aLmXPD5M5F8x4aNp2KXOHybAnVfmhTbc9Nex6+pZDmJj30CbaFg9DxpipMBnGpDSs1LZIGI7264WxjTEQ205DbbFqVhhOfMSDD22g7Z4qmSVjcveGCQvrtTkfF9Y/WyyKwxJIw2RiW6EKy+qLXVkJxLCu7RgGHxc+/eWQkcvDbm3Z/Pr+BZ/+coiBfpiMtg2NtH3CPIEkNRg20fZX5I2FTbd98rxCmKvt0+aVw0Te1rxeoE3h01+uHCasrffqhCqDT3+52JVVKWnrVSkkpfDpL4ee1N1tAp/+Wr9/fEWSmdMmsKAy6UkhyQy0yfdIlAzCvqdCDCBJHdEWvyD72gQuWBCuL0OVkLCmzXoat0FDAW6aDefeJa9qHLUtGwSU4Uon3PeIwbDj8RBiTX9wvQdOz+GgBfXC2io12HbG3U7VYgCPa7DtbHC0H7bWkVcpaeuSDC72w9Y6BsPEOtpYpf63uWFrHUgyXVv8EbeFi/2wtQ4kmdAlJYOL/bC1DiSpQ9M2NLjYD1vryKtae7TF31hwsR+21pFXHQ4NaYs9KVzsh6115FXracur1JJtWFkNksw/0xZ/zVxNm/VE7eBoJ6ysBkkmxJreHHG0E1ZWgySjbfE7ucHRTlhZDZL2jZ2QNoYJHO2EldXkVY39Wtq6pLZKraENSWYVbVmVim3dT0UtHO2EldUgyYTYEye+UONoJ6ysBkkmWE8KRzthZTVIMqts2+5aK2uLVWtq6yU1do01tCHJNG23L+RmL3C3B1ZWgyQTtMReyVI4fRJWVoMkE9ADuL4MK6tBkploEwgowMpqkHTzPt0m0DAGK6tBkti2ptvaL0WuPKysRnssybCt9/Uutd+hJIeV1SBpu40CG1T3n57Qk8LKapBkAk73QJLBymqQZOa0CVQprHweNIyZ2SavcAgTuGBBY391IzbK2bYdeB/N8nDQI2LM/T2pvK3JGCzpJP9PlmrrYu7oEewR7zeBd0OSMWZeWy9muZ5U0pYd7edpY4zg0WXsEYhpvHcCrpwtb2OJ4LmTGCMYo5Ik80hbfNPJX3Y6vHUSSxRLVBbT9+Zvm8pQvNWDJYoligHwlsrbuqfxnBLBDMMSxQDo9ZhN2+ZoELzvLmwwzDAMyDFGSZIJbBC8bAY2GDakeH2OJSrt6WykjWfNwIAUA1I8PccMwxKz6YTrWud6/QMDnAYz3wg70wAAAABJRU5ErkJggg==",
+              "type": "WEBMETHODS_API_GATEWAY",
+              "deploymentType": "PRIVATE_CLOUD",
+              "heartbeatInterval": 6000,
+              "publishAssets": true,
+              "syncAssets": true,
+              "sendMetrics": true
+            }
+      parameters: []
+      assertions:
+        $ref: default:PUT-v2-runtimes-512f725f-9e19-415d-99f8-b555a17a2744-401:1.0

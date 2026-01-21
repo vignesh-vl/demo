@@ -1,0 +1,12 @@
+kind: assertion
+metadata:
+  version: '1.0'
+  namespace: default
+  name: DELETE-v1-runtimes-512f725f-9e19-415d-99f8-b555a17a2744-200-1
+  tags: []
+apiVersion: api.ibm.com/v1
+spec:
+  - name: Validate the response status code
+    key: code
+    action: equals
+    value: 200

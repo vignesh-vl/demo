@@ -1,0 +1,143 @@
+kind: assertion
+metadata:
+  version: '1.0'
+  namespace: default
+  name: GET-v1-runtimes-512f725f-9e19-415d-99f8-b555a17a2744-200-1
+  tags: []
+apiVersion: api.ibm.com/v1
+spec:
+  - name: Validate the response status code
+    key: code
+    action: equals
+    value: 200
+  - name: Validate content type header
+    key: responseHeaders.content-type
+    action: equals
+    value: application/json
+  - name: Validate response schema
+    key: json()
+    action: validateSchema
+    value:
+      type: object
+      required:
+        - name
+        - type
+        - deploymentType
+      properties:
+        id:
+          type: string
+          description: UUID of the object.
+        name:
+          type: string
+          description: Name of the runtime.
+          minLength: 1
+          maxLength: 50
+          pattern: '[\\()_+@\!\#$%^&{}\-\=,.~''`\p{L}\p{M}{0-9}\s]{0,1024}'
+        description:
+          type: string
+          description: Short description of the runtime.
+          minLength: 0
+          maxLength: 300
+          pattern: '[\\()_+@\!\#$%^&{}\-\=,.~''`\p{L}\p{M}{0-9}\s]{0,1024}'
+        tags:
+          type: array
+          items:
+            type: string
+            pattern: ^\S*$
+            minLength: 0
+            maxLength: 50
+        created:
+          type: number
+          description: The time the asset was created.
+        lastModified:
+          type: number
+          description: The time the asset was last modified.
+        owner:
+          type: object
+          readOnly: true
+          description: The user or team who creates the runtime.
+          required:
+            - name
+          properties:
+            name:
+              type: string
+              description: Name of the owner.
+            id:
+              type: string
+              description: Id of the owner.
+            type:
+              type: string
+              description: Type of the owner.
+        type:
+          type: string
+          description: The type of the runtime.
+        heartbeatInterval:
+          type: integer
+          description: The heartbeat synch interval of the runtime.
+        deploymentType:
+          type: string
+          description: The type of deployment.
+          enum:
+            - ON_PREMISE
+            - SAG_SAAS
+            - PRIVATE_CLOUD
+            - PUBLIC_CLOUD
+        region:
+          type: string
+          description: Cloud provider region.
+          minLength: 0
+          maxLength: 50
+        location:
+          type: string
+          description: Cloud provider location.
+        host:
+          type: string
+          description: The hostname or IP address of the runtime
+          pattern: ((25[0-5]|(2[0-4]|1\d|[1-9]|)\d)(\.(?!$)|$)){4}
+        icon:
+          type: string
+          description: The icon of the runtime.
+        capacity:
+          type: object
+          description: The capacity of the runtime.
+          properties:
+            value:
+              type: integer
+              description: The value of the runtime capacity.
+            unit:
+              type: string
+              description: The unit of the capacity.
+              enum:
+                - per second
+                - per minute
+                - per hour
+                - per day
+                - per week
+                - per month
+                - per year
+        publishAssets:
+          type: boolean
+          description: whether the asset is published to Control plane.
+        syncAssets:
+          type: boolean
+          description: whether the asset is synced to Control plane.
+        sendMetrics:
+          type: boolean
+          description: whether the metrics are synced to Control plane.
+        connectedRuntimes:
+          type: array
+          description: List of connected runtimes
+          items:
+            type: string
+  - name: 'Validate required property: name'
+    key: json()
+    action: haveProperty
+    value: name
+  - name: 'Validate required property: type'
+    key: json()
+    action: haveProperty
+    value: type
+  - name: 'Validate required property: deploymentType'
+    key: json()
+    action: haveProperty
+    value: deploymentType

@@ -1,0 +1,33 @@
+kind: assertion
+metadata:
+  version: '1.0'
+  namespace: default
+  name: POST-v1-runtimes-400-1
+  tags: []
+apiVersion: api.ibm.com/v1
+spec:
+  - name: Validate the response status code
+    key: code
+    action: equals
+    value: 400
+  - name: Validate content type header
+    key: responseHeaders.content-type
+    action: equals
+    value: application/json
+  - name: Validate response schema
+    key: json()
+    action: validateSchema
+    value:
+      description: Common Error Response across all APIs
+      required:
+        - errorDetails
+      type: object
+      properties:
+        errorDetails:
+          type: array
+          items:
+            type: string
+  - name: 'Validate required property: errorDetails'
+    key: json()
+    action: haveProperty
+    value: errorDetails

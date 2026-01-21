@@ -1,0 +1,53 @@
+kind: assertion
+metadata:
+  version: '1.0'
+  namespace: default
+  name: POST-v1-runtimes-512f725f-9e19-415d-99f8-b555a17a2744-audit-201
+  tags: []
+apiVersion: api.ibm.com/v1
+spec:
+  - name: Validate the response status code
+    key: code
+    action: equals
+    value: 201
+  - name: Validate content type header
+    key: responseHeaders.content-type
+    action: equals
+    value: application/json
+  - name: Validate response schema
+    key: json()
+    action: validateSchema
+    value:
+      type: array
+      items:
+        type: object
+        readOnly: true
+        description: The audit event in Control Plane.
+        properties:
+          objectType:
+            type: string
+            description: The object type of hte audit event.
+            enum:
+              - RUNTIME
+              - DATAPLANE
+              - API
+          actionType:
+            type: string
+            description: The type of the operation for audit event.
+            enum:
+              - CREATE
+              - UPDATE
+              - DELETE
+              - RUNTIME_DATA_SYNC
+          data:
+            type: string
+            description: The data of the event such as the JSON payload of the asset.
+          objectId:
+            type: string
+            description: The id of the asset.
+          message:
+            type: string
+            description: Simple message about the event.
+          status:
+            type: string
+            description: Status about the event.
