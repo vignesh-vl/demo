@@ -1,0 +1,13 @@
+kind: API
+apiVersion: api.ibm.com/v1
+metadata:
+  name: newapi
+  namespace: proj4bsdb
+  version: '1.0'
+  tags: []
+  type: REST
+spec:
+  api-spec:
+    $path: ./newapi-spec.yml
+  policy-sequence:
+    - $ref: proj4bsdb:vignesh:1.0

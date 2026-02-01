@@ -1,0 +1,13 @@
+kind: StagedPolicySequence
+apiVersion: api.ibm.com/v1
+metadata:
+  name: vignesh
+  namespace: proj4bsdb
+  version: '1.0'
+  tags: []
+  labels:
+    gatewayTypes:
+      - webMethods
+spec:
+  routing:
+    - $ref: proj4bsdb:invoke-vignesh:1.0

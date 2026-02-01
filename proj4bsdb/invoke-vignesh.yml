@@ -1,0 +1,11 @@
+kind: Invoke
+apiVersion: api.ibm.com/v1
+metadata:
+  name: invoke-vignesh
+  namespace: proj4bsdb
+  version: '1.0'
+  tags: []
+  labels:
+    gatewayTypes:
+      - webMethods
+spec: {}
