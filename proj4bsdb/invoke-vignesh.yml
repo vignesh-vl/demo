@@ -1,7 +1,7 @@
 kind: Invoke
 apiVersion: api.ibm.com/v1
 metadata:
-  name: invoke-vignesh
+  name: invoke-郎嗀蘒鿯𠳐𫚭𫟦𬉼𠂇⽦
   namespace: proj4bsdb
   version: '1.0'
   tags: []

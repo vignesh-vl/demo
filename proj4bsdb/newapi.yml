@@ -1,7 +1,7 @@
 kind: API
 apiVersion: api.ibm.com/v1
 metadata:
-  name: newapi
+  name: new郎嗀蘒鿯𠳐𫚭𫟦𬉼𠂇⽦
   namespace: proj4bsdb
   version: '1.0'
   tags: []
