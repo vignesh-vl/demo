@@ -64,11 +64,15 @@ projects:
     tags: []
     lastUpdated: 1769937314545
   proj4bsdb:
-    description: 郎嗀蘒鿯𠳐𫚭𫟦𬉼𠂇⽦
+    description: 郎嗀蘒鿯�����⽦
     tags:
-      - 郎嗀蘒鿯𠳐𫚭𫟦𬉼𠂇⽦
+      - 郎嗀蘒鿯�����⽦
     lastUpdated: 1769967052438
   proj3:
     description: ''
     tags: []
     lastUpdated: 1769967251425
+  demo-vcs:
+    description: ''
+    tags: []
+    lastUpdated: 1770102549558
