@@ -1,7 +1,7 @@
 kind: Invoke
 apiVersion: api.ibm.com/v1
 metadata:
-  name: Invoke-1
+  name: Invoke
   namespace: dem0
   version: '1.0'
   tags: []
