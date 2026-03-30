@@ -107,3 +107,10 @@ projects:
     tags: []
     lastUpdated: 1770296933317
     id: poG4Hr2Z
+  DPv6_Product_Calculator_Soap:
+    id: hIMC7rxJ
+    description: Sample project with API definitions and policies
+    tags:
+      - sample
+      - API
+    lastUpdated: 1774864617228
