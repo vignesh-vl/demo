@@ -128,10 +128,3 @@ projects:
       - sample
       - API
     lastUpdated: 1774864258747
-  DPNano_Product_MultiAPI:
-    id: m2TqmP6z
-    description: Sample project with API definitions and policies
-    tags:
-      - sample
-      - API
-    lastUpdated: 1774864263341
