@@ -142,3 +142,10 @@ projects:
       - sample
       - API
     lastUpdated: 1774864630203
+  wM_APIKey_Weather:
+    id: V8ZIB0WR
+    description: Sample project with API definitions and policies
+    tags:
+      - sample
+      - API
+    lastUpdated: 1774864634379
