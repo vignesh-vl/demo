@@ -114,10 +114,3 @@ projects:
       - sample
       - API
     lastUpdated: 1774864249676
-  DPv6_Product_Weather:
-    id: zYTgEyZf
-    description: Sample project with API definitions and policies
-    tags:
-      - sample
-      - API
-    lastUpdated: 1774864254267
