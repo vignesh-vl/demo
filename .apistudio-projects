@@ -142,10 +142,3 @@ projects:
       - sample
       - API
     lastUpdated: 1774864268954
-  wM_NoAuth_Weather:
-    id: ZwopGd0H
-    description: Sample project with API definitions and policies
-    tags:
-      - sample
-      - API
-    lastUpdated: 1774864273866
