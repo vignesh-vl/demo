@@ -128,3 +128,10 @@ projects:
       - sample
       - API
     lastUpdated: 1774864623491
+  DPv5c_Product_Order:
+    id: go2SDZbH
+    description: Sample project with API definitions and policies
+    tags:
+      - sample
+      - API
+    lastUpdated: 1774864626947
