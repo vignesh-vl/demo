@@ -1,1 +1,0 @@
-Publishes REST API to V5 DataPower Gateway with product and plan.
