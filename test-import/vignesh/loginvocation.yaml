@@ -1,0 +1,24 @@
+kind: Log
+apiVersion: api.webmethods.io/beta
+metadata:
+  name: log_invocation
+  version: alpha
+  namespace: daso
+  tags:
+    - log_invocation
+spec:
+  enabled: true
+  logRequestHeaders: true
+  logResponseHeaders: true
+  logRequestPayload: true
+  logResponsePayload: true
+  compressPayloads: true
+  logGenerationFrequency: always
+  destination:
+    - self
+    - dev_portals:
+        - devportal1
+    - email:
+        - daso@ibm.com
+        - daso@sag.com
+        - daso@sag.com
