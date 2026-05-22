@@ -1,0 +1,170 @@
+{
+  "nodes": [
+    {
+      "id": "16b8ec11-c191-4123-a732-576d1c743d97:0",
+      "projectId": "02FDTzAC",
+      "filePath": "import_dummy_3_48/new.yml",
+      "docIndex": 0,
+      "assetType": "resource",
+      "lastIndexed": 1779449180334,
+      "schemaVersion": 1,
+      "kind": "URISchemes",
+      "name": "new",
+      "namespace": "dem0",
+      "version": "1.0",
+      "contentHash": "3c58883fe3bea036"
+    },
+    {
+      "id": "3d69737b-00c5-492e-acb7-206d21aea74f:0",
+      "projectId": "02FDTzAC",
+      "filePath": "import_dummy_3_48/hhhqwdviwq-spec.yml",
+      "docIndex": 0,
+      "assetType": "support",
+      "lastIndexed": 1779449180326,
+      "schemaVersion": 1
+    },
+    {
+      "id": "b00d0721-35d4-414c-9d47-e469efa93947:0",
+      "projectId": "02FDTzAC",
+      "filePath": "import_dummy_3_48/vignesh(1).yml",
+      "docIndex": 0,
+      "assetType": "resource",
+      "lastIndexed": 1779449180463,
+      "schemaVersion": 1,
+      "kind": "FreeFlowPolicySequence",
+      "name": "vignesh(1)",
+      "namespace": "dem0",
+      "version": "1.0",
+      "contentHash": "2761c8f34168ed2a"
+    },
+    {
+      "id": "be5dc5fe-e546-40af-b96d-bac9a36e70a5:0",
+      "projectId": "02FDTzAC",
+      "filePath": "import_dummy_3_48/new/kk.yml",
+      "docIndex": 0,
+      "assetType": "resource",
+      "lastIndexed": 1779449180451,
+      "schemaVersion": 1,
+      "kind": "API",
+      "name": "kk",
+      "namespace": "dem0",
+      "version": "1.0",
+      "contentHash": "92f96e12f085dd22"
+    },
+    {
+      "id": "bf93bd00-9b1b-43c4-9fa6-0b95dc9a898e:0",
+      "projectId": "02FDTzAC",
+      "filePath": "import_dummy_3_48/new/vignesh-2.yml",
+      "docIndex": 0,
+      "assetType": "resource",
+      "lastIndexed": 1779449180457,
+      "schemaVersion": 1,
+      "kind": "ExtractIdentity",
+      "name": "extractIdentity-http-basic",
+      "namespace": "security",
+      "version": 1,
+      "contentHash": "dac9080069cf762a"
+    },
+    {
+      "id": "c161dc4f-5e17-4f0d-a3a2-c165984a7e70:0",
+      "projectId": "02FDTzAC",
+      "filePath": "import_dummy_3_48/kk-spec-2.yml",
+      "docIndex": 0,
+      "assetType": "support",
+      "lastIndexed": 1779449180330,
+      "schemaVersion": 1
+    },
+    {
+      "id": "d34791d5-c691-4174-9283-5dbf81446613:0",
+      "projectId": "02FDTzAC",
+      "filePath": "import_dummy_3_48/api_studio_project.yml",
+      "docIndex": 0,
+      "assetType": "resource",
+      "lastIndexed": 1779449180315,
+      "schemaVersion": 1,
+      "kind": "ExtractIdentity",
+      "name": "extractIdentity-hostip",
+      "namespace": "security",
+      "version": 1,
+      "contentHash": "3b812068973b4f61"
+    },
+    {
+      "id": "dc737396-54ea-4507-930a-91aa95a3e424:0",
+      "projectId": "02FDTzAC",
+      "filePath": "import_dummy_3_48/Invoke-1.yml",
+      "docIndex": 0,
+      "assetType": "resource",
+      "lastIndexed": 1779449180310,
+      "schemaVersion": 1,
+      "kind": "Invoke",
+      "name": "Invoke-1",
+      "namespace": "dem0",
+      "version": "1.0",
+      "contentHash": "24e33234641c73c8"
+    },
+    {
+      "id": "e8cfe704-5392-4567-a718-eb3f853cd813:0",
+      "projectId": "02FDTzAC",
+      "filePath": "import_dummy_3_48/hhhqwd.yml",
+      "docIndex": 0,
+      "assetType": "resource",
+      "lastIndexed": 1779449180318,
+      "schemaVersion": 1,
+      "kind": "API",
+      "name": "hhhqwdviwq",
+      "namespace": "dem0",
+      "version": "1.0",
+      "contentHash": "4636d4c384ef8c3a"
+    }
+  ],
+  "edges": [
+    {
+      "id": "6fa649ac-7c6f-4ef9-91fe-eaad3f9ec07a",
+      "projectId": "02FDTzAC",
+      "sourceNodeId": "be5dc5fe-e546-40af-b96d-bac9a36e70a5:0",
+      "targetNodeId": "16b8ec11-c191-4123-a732-576d1c743d97:0",
+      "targetRefType": "same-project",
+      "targetRefString": "dem0:new:1.0",
+      "targetRefKind": "resource",
+      "isValid": true,
+      "createdAt": 1779449180454,
+      "lastValidated": 1779449180454
+    },
+    {
+      "id": "bdd7c509-0880-4b8f-abc9-23818f5b9b97",
+      "projectId": "02FDTzAC",
+      "sourceNodeId": "e8cfe704-5392-4567-a718-eb3f853cd813:0",
+      "targetNodeId": "3d69737b-00c5-492e-acb7-206d21aea74f:0",
+      "targetRefType": "same-project",
+      "targetRefString": "./hhhqwdviwq-spec.yml",
+      "targetRefKind": "support",
+      "isValid": true,
+      "createdAt": 1779449180324,
+      "lastValidated": 1779449180473
+    },
+    {
+      "id": "ef985aa8-d8cd-49f8-b8ae-fffef4c843bd",
+      "projectId": "02FDTzAC",
+      "sourceNodeId": "b00d0721-35d4-414c-9d47-e469efa93947:0",
+      "targetNodeId": "dc737396-54ea-4507-930a-91aa95a3e424:0",
+      "targetRefType": "same-project",
+      "targetRefString": "dem0:Invoke-1:1.0",
+      "targetRefKind": "resource",
+      "isValid": true,
+      "createdAt": 1779449180465,
+      "lastValidated": 1779449180465
+    },
+    {
+      "id": "f9907cb9-94f5-479e-8617-f3aa11fdd505",
+      "projectId": "02FDTzAC",
+      "sourceNodeId": "be5dc5fe-e546-40af-b96d-bac9a36e70a5:0",
+      "targetNodeId": "c161dc4f-5e17-4f0d-a3a2-c165984a7e70:0",
+      "targetRefType": "same-project",
+      "targetRefString": "../kk-spec-2.yml",
+      "targetRefKind": "support",
+      "isValid": true,
+      "createdAt": 1779449180454,
+      "lastValidated": 1779449180454
+    }
+  ]
+}

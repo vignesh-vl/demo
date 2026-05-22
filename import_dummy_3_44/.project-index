@@ -1,0 +1,95 @@
+{
+  "nodes": [
+    {
+      "id": "1c107a0b-7387-4c93-bda0-9b10d6654c3d:0",
+      "projectId": "I03DiQJ4",
+      "filePath": "import_dummy_3_44/assertion_1761287879133.yml",
+      "docIndex": 0,
+      "assetType": "resource",
+      "lastIndexed": 1779449179538,
+      "schemaVersion": 1,
+      "kind": "assertion",
+      "name": "assertion_1761287879133",
+      "namespace": "dem0",
+      "version": "1.0",
+      "contentHash": "aab1798b42a8c616"
+    },
+    {
+      "id": "713e934f-98f7-4b68-b0db-aa8e02b82e34:0",
+      "projectId": "I03DiQJ4",
+      "filePath": "import_dummy_3_44/demo.yml",
+      "docIndex": 0,
+      "assetType": "resource",
+      "lastIndexed": 1779449179611,
+      "schemaVersion": 1,
+      "kind": "test",
+      "name": "demo",
+      "namespace": "dem0",
+      "version": "1.0",
+      "contentHash": "3eace837f72e6885"
+    },
+    {
+      "id": "aebcdf10-2a6d-41ac-9b66-99681a841e80:0",
+      "projectId": "I03DiQJ4",
+      "filePath": "import_dummy_3_44/api_studio_project.yml",
+      "docIndex": 0,
+      "assetType": "resource",
+      "lastIndexed": 1779449179500,
+      "schemaVersion": 1,
+      "kind": "ExtractIdentity",
+      "name": "extractIdentity-hostip",
+      "namespace": "security",
+      "version": 1,
+      "contentHash": "3b812068973b4f61"
+    },
+    {
+      "id": "f071893d-42dc-4070-84e0-32a1c3d95121:0",
+      "projectId": "I03DiQJ4",
+      "filePath": "import_dummy_3_44/hhhqwdviwq-spec.yml",
+      "docIndex": 0,
+      "assetType": "support",
+      "lastIndexed": 1779449179640,
+      "schemaVersion": 1
+    }
+  ],
+  "edges": [
+    {
+      "id": "13942634-8539-4f97-abc9-55174a0bc42d",
+      "projectId": "I03DiQJ4",
+      "sourceNodeId": "713e934f-98f7-4b68-b0db-aa8e02b82e34:0",
+      "targetNodeId": null,
+      "targetRefType": "same-project",
+      "targetRefString": "webm-project:InboundmessagingAPI1:1.0",
+      "targetRefKind": "resource",
+      "isValid": false,
+      "invalidReason": "Target resource not found: webm-project:InboundmessagingAPI1:1.0",
+      "createdAt": 1779449179635,
+      "lastValidated": 1779449179635
+    },
+    {
+      "id": "3505b89a-f2b6-4bcf-aaa0-aae4f7b26160",
+      "projectId": "I03DiQJ4",
+      "sourceNodeId": "713e934f-98f7-4b68-b0db-aa8e02b82e34:0",
+      "targetNodeId": null,
+      "targetRefType": "same-project",
+      "targetRefString": "local-webm-apim:assertion_1759925452831:1.0",
+      "targetRefKind": "resource",
+      "isValid": false,
+      "invalidReason": "Target resource not found: local-webm-apim:assertion_1759925452831:1.0",
+      "createdAt": 1779449179635,
+      "lastValidated": 1779449179635
+    },
+    {
+      "id": "d343e560-9b11-4bc0-93be-d47ae0a57c73",
+      "projectId": "I03DiQJ4",
+      "sourceNodeId": "713e934f-98f7-4b68-b0db-aa8e02b82e34:0",
+      "targetNodeId": "1c107a0b-7387-4c93-bda0-9b10d6654c3d:0",
+      "targetRefType": "same-project",
+      "targetRefString": "dem0:assertion_1761287879133:1.0",
+      "targetRefKind": "resource",
+      "isValid": true,
+      "createdAt": 1779449179635,
+      "lastValidated": 1779449179635
+    }
+  ]
+}

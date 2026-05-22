@@ -1,0 +1,94 @@
+{
+  "nodes": [
+    {
+      "id": "3893d071-2cb0-4d10-a621-f029794f12e5:0",
+      "projectId": "bdQLuK6Y",
+      "filePath": "proj4bsdb/newapi-spec.yml",
+      "docIndex": 0,
+      "assetType": "support",
+      "lastIndexed": 1779449181483,
+      "schemaVersion": 1
+    },
+    {
+      "id": "688dfd70-1280-4717-8a67-0c51820f5be6:0",
+      "projectId": "bdQLuK6Y",
+      "filePath": "proj4bsdb/newapi.yml",
+      "docIndex": 0,
+      "assetType": "resource",
+      "lastIndexed": 1779449181486,
+      "schemaVersion": 1,
+      "kind": "API",
+      "name": "new���Cmmp@f",
+      "namespace": "proj4bsdb",
+      "version": "1.0",
+      "contentHash": "803555d7081b8bc8"
+    },
+    {
+      "id": "8bcf7ee4-78f3-40ed-8a02-ff1d4340b21d:0",
+      "projectId": "bdQLuK6Y",
+      "filePath": "proj4bsdb/���Cmmp@f.yml",
+      "docIndex": 0,
+      "assetType": "resource",
+      "lastIndexed": 1779449181625,
+      "schemaVersion": 1,
+      "kind": "StagedPolicySequence",
+      "name": "vignesh",
+      "namespace": "proj4bsdb",
+      "version": "1.0",
+      "contentHash": "fee79232dcc7e4e9"
+    },
+    {
+      "id": "ce1bf743-f4f1-4fe7-aa1a-0a06c91d0e36:0",
+      "projectId": "bdQLuK6Y",
+      "filePath": "proj4bsdb/invoke-vignesh.yml",
+      "docIndex": 0,
+      "assetType": "resource",
+      "lastIndexed": 1779449181479,
+      "schemaVersion": 1,
+      "kind": "Invoke",
+      "name": "invoke-���Cmmp@f",
+      "namespace": "proj4bsdb",
+      "version": "1.0",
+      "contentHash": "204a44fb9bbbcac0"
+    }
+  ],
+  "edges": [
+    {
+      "id": "406f7af9-4d36-4598-b45c-786720000938",
+      "projectId": "bdQLuK6Y",
+      "sourceNodeId": "688dfd70-1280-4717-8a67-0c51820f5be6:0",
+      "targetNodeId": "8bcf7ee4-78f3-40ed-8a02-ff1d4340b21d:0",
+      "targetRefType": "same-project",
+      "targetRefString": "proj4bsdb:vignesh:1.0",
+      "targetRefKind": "resource",
+      "isValid": true,
+      "createdAt": 1779449181488,
+      "lastValidated": 1779449181667
+    },
+    {
+      "id": "93d8f4ec-4c1c-42f6-aaae-730cbdf17164",
+      "projectId": "bdQLuK6Y",
+      "sourceNodeId": "8bcf7ee4-78f3-40ed-8a02-ff1d4340b21d:0",
+      "targetNodeId": null,
+      "targetRefType": "same-project",
+      "targetRefString": "proj4bsdb:invoke-vignesh:1.0",
+      "targetRefKind": "resource",
+      "isValid": false,
+      "invalidReason": "Target resource not found: proj4bsdb:invoke-vignesh:1.0",
+      "createdAt": 1779449181648,
+      "lastValidated": 1779449181648
+    },
+    {
+      "id": "a5462db3-eb44-4d4e-94a5-19b0ba7358a0",
+      "projectId": "bdQLuK6Y",
+      "sourceNodeId": "688dfd70-1280-4717-8a67-0c51820f5be6:0",
+      "targetNodeId": "3893d071-2cb0-4d10-a621-f029794f12e5:0",
+      "targetRefType": "same-project",
+      "targetRefString": "./newapi-spec.yml",
+      "targetRefKind": "support",
+      "isValid": true,
+      "createdAt": 1779449181488,
+      "lastValidated": 1779449181488
+    }
+  ]
+}

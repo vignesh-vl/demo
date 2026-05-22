@@ -1,0 +1,22 @@
+kind: Cache
+apiVersion: api.ibm.com/v1
+metadata:
+  name: Cache-TkiXT
+  namespace: CatalogInventory
+  version: '1.0'
+  tags: []
+  labels:
+    gatewayTypes:
+      - nano
+spec:
+  execute:
+    - $ref: CatalogInventory:Invoke-QweAb:1.0
+  inputs:
+    - message:
+        name: request
+  outputs:
+    - message:
+        name: response
+  expire:
+    static:
+      seconds: 500

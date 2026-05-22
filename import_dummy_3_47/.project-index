@@ -1,0 +1,168 @@
+{
+  "nodes": [
+    {
+      "id": "0624b3ae-bba7-4a95-b158-67ff5b24d4b2:0",
+      "projectId": "2e0w0Fbw",
+      "filePath": "import_dummy_3_47/Invoke-1.yml",
+      "docIndex": 0,
+      "assetType": "resource",
+      "lastIndexed": 1779449180081,
+      "schemaVersion": 1,
+      "kind": "Invoke",
+      "name": "Invoke",
+      "namespace": "dem0",
+      "version": "1.0",
+      "contentHash": "733d86b2c4c94fab"
+    },
+    {
+      "id": "2af213ea-c5bc-4f04-9630-4723f0de3032:0",
+      "projectId": "2e0w0Fbw",
+      "filePath": "import_dummy_3_47/jjj.yml",
+      "docIndex": 0,
+      "assetType": "resource",
+      "lastIndexed": 1779449180215,
+      "schemaVersion": 1,
+      "kind": "test",
+      "name": "jjj",
+      "namespace": "dem0",
+      "version": "1.0",
+      "contentHash": "811f175a1f6deae5"
+    },
+    {
+      "id": "354a5621-62e1-4d0f-ad1c-2d1873e0b8a8:0",
+      "projectId": "2e0w0Fbw",
+      "filePath": "import_dummy_3_47/kk-spec.yml",
+      "docIndex": 0,
+      "assetType": "support",
+      "lastIndexed": 1779449180220,
+      "schemaVersion": 1
+    },
+    {
+      "id": "53046b06-9c0b-4cba-87cc-c93da2860669:0",
+      "projectId": "2e0w0Fbw",
+      "filePath": "import_dummy_3_47/hhhqwdviwq-spec.yml",
+      "docIndex": 0,
+      "assetType": "support",
+      "lastIndexed": 1779449180092,
+      "schemaVersion": 1
+    },
+    {
+      "id": "adf99796-1c6a-4455-8bb8-d4f3ad21b321:0",
+      "projectId": "2e0w0Fbw",
+      "filePath": "import_dummy_3_47/demo.yml",
+      "docIndex": 0,
+      "assetType": "resource",
+      "lastIndexed": 1779449180085,
+      "schemaVersion": 1,
+      "kind": "test",
+      "name": "demo",
+      "namespace": "dem0",
+      "version": "1.0",
+      "contentHash": "3eace837f72e6885"
+    },
+    {
+      "id": "e5a60285-33eb-42a7-863e-48bd4706bf4d:0",
+      "projectId": "2e0w0Fbw",
+      "filePath": "import_dummy_3_47/kk.yml",
+      "docIndex": 0,
+      "assetType": "resource",
+      "lastIndexed": 1779449180225,
+      "schemaVersion": 1,
+      "kind": "API",
+      "name": "kk",
+      "namespace": "dem0",
+      "version": "1.0",
+      "contentHash": "8c0e5559fe417c66"
+    },
+    {
+      "id": "fe99bdef-2d79-442c-aa02-750ac70d4a7e:0",
+      "projectId": "2e0w0Fbw",
+      "filePath": "import_dummy_3_47/hhhqwdviwq.yml",
+      "docIndex": 0,
+      "assetType": "resource",
+      "lastIndexed": 1779449180096,
+      "schemaVersion": 1,
+      "kind": "API",
+      "name": "hhhqwdviwq",
+      "namespace": "dem0",
+      "version": "1.0",
+      "contentHash": "4636d4c384ef8c3a"
+    }
+  ],
+  "edges": [
+    {
+      "id": "31511ecf-ccd4-4799-a221-c3bb5f8046df",
+      "projectId": "2e0w0Fbw",
+      "sourceNodeId": "adf99796-1c6a-4455-8bb8-d4f3ad21b321:0",
+      "targetNodeId": null,
+      "targetRefType": "same-project",
+      "targetRefString": "webm-project:InboundmessagingAPI1:1.0",
+      "targetRefKind": "resource",
+      "isValid": false,
+      "invalidReason": "Target resource not found: webm-project:InboundmessagingAPI1:1.0",
+      "createdAt": 1779449180089,
+      "lastValidated": 1779449180089
+    },
+    {
+      "id": "57374367-db96-4c70-877a-319dfbd31d5b",
+      "projectId": "2e0w0Fbw",
+      "sourceNodeId": "adf99796-1c6a-4455-8bb8-d4f3ad21b321:0",
+      "targetNodeId": null,
+      "targetRefType": "same-project",
+      "targetRefString": "local-webm-apim:assertion_1759925452831:1.0",
+      "targetRefKind": "resource",
+      "isValid": false,
+      "invalidReason": "Target resource not found: local-webm-apim:assertion_1759925452831:1.0",
+      "createdAt": 1779449180089,
+      "lastValidated": 1779449180089
+    },
+    {
+      "id": "7acd3cbf-856a-4435-996b-f7c17d9538f9",
+      "projectId": "2e0w0Fbw",
+      "sourceNodeId": "fe99bdef-2d79-442c-aa02-750ac70d4a7e:0",
+      "targetNodeId": "53046b06-9c0b-4cba-87cc-c93da2860669:0",
+      "targetRefType": "same-project",
+      "targetRefString": "./hhhqwdviwq-spec.yml",
+      "targetRefKind": "support",
+      "isValid": true,
+      "createdAt": 1779449180123,
+      "lastValidated": 1779449180123
+    },
+    {
+      "id": "8f9cd494-5d29-4977-a461-d895a4b5458f",
+      "projectId": "2e0w0Fbw",
+      "sourceNodeId": "adf99796-1c6a-4455-8bb8-d4f3ad21b321:0",
+      "targetNodeId": "1c107a0b-7387-4c93-bda0-9b10d6654c3d:0",
+      "targetRefType": "cross-project",
+      "targetRefString": "dem0:assertion_1761287879133:1.0",
+      "targetRefKind": "resource",
+      "isValid": true,
+      "createdAt": 1779449180089,
+      "lastValidated": 1779449180089
+    },
+    {
+      "id": "930daa3c-3ce0-4785-a57d-21218c6346e4",
+      "projectId": "2e0w0Fbw",
+      "sourceNodeId": "e5a60285-33eb-42a7-863e-48bd4706bf4d:0",
+      "targetNodeId": "16b8ec11-c191-4123-a732-576d1c743d97:0",
+      "targetRefType": "cross-project",
+      "targetRefString": "dem0:new:1.0",
+      "targetRefKind": "resource",
+      "isValid": true,
+      "createdAt": 1779449180229,
+      "lastValidated": 1779449180470
+    },
+    {
+      "id": "b6764851-853f-45f8-98c8-c6a31187c25f",
+      "projectId": "2e0w0Fbw",
+      "sourceNodeId": "e5a60285-33eb-42a7-863e-48bd4706bf4d:0",
+      "targetNodeId": "354a5621-62e1-4d0f-ad1c-2d1873e0b8a8:0",
+      "targetRefType": "same-project",
+      "targetRefString": "./kk-spec.yml",
+      "targetRefKind": "support",
+      "isValid": true,
+      "createdAt": 1779449180229,
+      "lastValidated": 1779449180229
+    }
+  ]
+}

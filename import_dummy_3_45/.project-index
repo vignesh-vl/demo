@@ -1,0 +1,135 @@
+{
+  "nodes": [
+    {
+      "id": "10309176-aa45-4911-8f66-dd03e28ca7f0:0",
+      "projectId": "LSJEf5Iw",
+      "filePath": "import_dummy_3_45/hhhqwdviwq-spec.yml",
+      "docIndex": 0,
+      "assetType": "support",
+      "lastIndexed": 1779449179846,
+      "schemaVersion": 1
+    },
+    {
+      "id": "66bcc0b4-a0e3-4c38-8001-afd6b458a1db:0",
+      "projectId": "LSJEf5Iw",
+      "filePath": "import_dummy_3_45/assertion_1761287879133.yml",
+      "docIndex": 0,
+      "assetType": "resource",
+      "lastIndexed": 1779449179829,
+      "schemaVersion": 1,
+      "kind": "assertion",
+      "name": "assertion_1761287879133",
+      "namespace": "dem0",
+      "version": "1.0",
+      "contentHash": "aab1798b42a8c616"
+    },
+    {
+      "id": "75939b0d-23b9-40df-94b2-2c53e91321dc:0",
+      "projectId": "LSJEf5Iw",
+      "filePath": "import_dummy_3_45/Invoke-1.yml",
+      "docIndex": 0,
+      "assetType": "resource",
+      "lastIndexed": 1779449179688,
+      "schemaVersion": 1,
+      "kind": "Invoke",
+      "name": "Invoke-1",
+      "namespace": "dem0",
+      "version": "1.0",
+      "contentHash": "24e33234641c73c8"
+    },
+    {
+      "id": "c80c8140-344b-478c-b0a2-f7e191306084:0",
+      "projectId": "LSJEf5Iw",
+      "filePath": "import_dummy_3_45/demo.yml",
+      "docIndex": 0,
+      "assetType": "resource",
+      "lastIndexed": 1779449179835,
+      "schemaVersion": 1,
+      "kind": "test",
+      "name": "demo",
+      "namespace": "dem0",
+      "version": "1.0",
+      "contentHash": "3eace837f72e6885"
+    },
+    {
+      "id": "f97a03ed-e615-4b8c-aa4e-2ef4f2dc2649:0",
+      "projectId": "LSJEf5Iw",
+      "filePath": "import_dummy_3_45/api_studio_project.yml",
+      "docIndex": 0,
+      "assetType": "resource",
+      "lastIndexed": 1779449179823,
+      "schemaVersion": 1,
+      "kind": "ExtractIdentity",
+      "name": "extractIdentity-hostip",
+      "namespace": "security",
+      "version": 1,
+      "contentHash": "3b812068973b4f61"
+    },
+    {
+      "id": "fe03025b-2149-4f0a-a122-d3aaa4bdd33c:0",
+      "projectId": "LSJEf5Iw",
+      "filePath": "import_dummy_3_45/hhhqwdviwq.yml",
+      "docIndex": 0,
+      "assetType": "resource",
+      "lastIndexed": 1779449179866,
+      "schemaVersion": 1,
+      "kind": "API",
+      "name": "hhhqwdviwq",
+      "namespace": "dem0",
+      "version": "1.0",
+      "contentHash": "4636d4c384ef8c3a"
+    }
+  ],
+  "edges": [
+    {
+      "id": "2baf1874-6d2e-4076-9c59-dbe7186cdc2a",
+      "projectId": "LSJEf5Iw",
+      "sourceNodeId": "c80c8140-344b-478c-b0a2-f7e191306084:0",
+      "targetNodeId": "66bcc0b4-a0e3-4c38-8001-afd6b458a1db:0",
+      "targetRefType": "same-project",
+      "targetRefString": "dem0:assertion_1761287879133:1.0",
+      "targetRefKind": "resource",
+      "isValid": true,
+      "createdAt": 1779449179842,
+      "lastValidated": 1779449179842
+    },
+    {
+      "id": "4ea14418-4153-4dee-bf0d-b44b8758414f",
+      "projectId": "LSJEf5Iw",
+      "sourceNodeId": "c80c8140-344b-478c-b0a2-f7e191306084:0",
+      "targetNodeId": null,
+      "targetRefType": "same-project",
+      "targetRefString": "webm-project:InboundmessagingAPI1:1.0",
+      "targetRefKind": "resource",
+      "isValid": false,
+      "invalidReason": "Target resource not found: webm-project:InboundmessagingAPI1:1.0",
+      "createdAt": 1779449179842,
+      "lastValidated": 1779449179842
+    },
+    {
+      "id": "ce7a1c62-decf-4f36-95b3-d3d9d5d0485d",
+      "projectId": "LSJEf5Iw",
+      "sourceNodeId": "c80c8140-344b-478c-b0a2-f7e191306084:0",
+      "targetNodeId": null,
+      "targetRefType": "same-project",
+      "targetRefString": "local-webm-apim:assertion_1759925452831:1.0",
+      "targetRefKind": "resource",
+      "isValid": false,
+      "invalidReason": "Target resource not found: local-webm-apim:assertion_1759925452831:1.0",
+      "createdAt": 1779449179842,
+      "lastValidated": 1779449179842
+    },
+    {
+      "id": "dcd6f4e5-6e54-42c6-8aa7-d642f10a0be5",
+      "projectId": "LSJEf5Iw",
+      "sourceNodeId": "fe03025b-2149-4f0a-a122-d3aaa4bdd33c:0",
+      "targetNodeId": "10309176-aa45-4911-8f66-dd03e28ca7f0:0",
+      "targetRefType": "same-project",
+      "targetRefString": "./hhhqwdviwq-spec.yml",
+      "targetRefKind": "support",
+      "isValid": true,
+      "createdAt": 1779449179963,
+      "lastValidated": 1779449179963
+    }
+  ]
+}

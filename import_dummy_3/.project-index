@@ -1,0 +1,19 @@
+{
+  "nodes": [
+    {
+      "id": "b3d9b4de-16fd-47e0-a6ab-a3b72248e94d:0",
+      "projectId": "0MEn2hk6",
+      "filePath": "import_dummy_3/api_studio_project.yml",
+      "docIndex": 0,
+      "assetType": "resource",
+      "lastIndexed": 1779449179421,
+      "schemaVersion": 1,
+      "kind": "ExtractIdentity",
+      "name": "extractIdentity-hostip",
+      "namespace": "security",
+      "version": 1,
+      "contentHash": "3b812068973b4f61"
+    }
+  ],
+  "edges": []
+}

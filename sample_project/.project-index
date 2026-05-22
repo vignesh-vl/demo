@@ -1,0 +1,119 @@
+{
+  "nodes": [
+    {
+      "id": "43242053-e408-4fcb-a603-79b6f51c29d8:0",
+      "projectId": "FoO1Fd7o",
+      "filePath": "sample_project/vignesh.yml",
+      "docIndex": 0,
+      "assetType": "resource",
+      "lastIndexed": 1779449178563,
+      "schemaVersion": 1,
+      "kind": "API",
+      "name": "vignesh",
+      "namespace": "sample_project",
+      "version": "1.0",
+      "contentHash": "6f91110fd74167b2"
+    },
+    {
+      "id": "c7e22dd3-3ce1-4f8d-9d38-1baca11f1502:0",
+      "projectId": "FoO1Fd7o",
+      "filePath": "sample_project/vignesh-spec.json",
+      "docIndex": 0,
+      "assetType": "support",
+      "lastIndexed": 1779449178417,
+      "schemaVersion": 1
+    }
+  ],
+  "edges": [
+    {
+      "id": "137d8ab9-b428-436c-b598-927c147bfd3c",
+      "projectId": "FoO1Fd7o",
+      "sourceNodeId": "c7e22dd3-3ce1-4f8d-9d38-1baca11f1502:0",
+      "targetNodeId": null,
+      "targetRefType": "same-project",
+      "targetRefString": "#/definitions/Order",
+      "targetRefKind": "support",
+      "isValid": false,
+      "invalidReason": "Target file not found: #/definitions/Order",
+      "createdAt": 1779449178443,
+      "lastValidated": 1779449178443
+    },
+    {
+      "id": "1956b1e8-3322-489b-aadc-1f460aed3d20",
+      "projectId": "FoO1Fd7o",
+      "sourceNodeId": "c7e22dd3-3ce1-4f8d-9d38-1baca11f1502:0",
+      "targetNodeId": null,
+      "targetRefType": "same-project",
+      "targetRefString": "#/definitions/Tag",
+      "targetRefKind": "support",
+      "isValid": false,
+      "invalidReason": "Target file not found: #/definitions/Tag",
+      "createdAt": 1779449178443,
+      "lastValidated": 1779449178443
+    },
+    {
+      "id": "23e70d68-f415-48ab-9c5a-818a64e99c57",
+      "projectId": "FoO1Fd7o",
+      "sourceNodeId": "c7e22dd3-3ce1-4f8d-9d38-1baca11f1502:0",
+      "targetNodeId": null,
+      "targetRefType": "same-project",
+      "targetRefString": "#/definitions/User",
+      "targetRefKind": "support",
+      "isValid": false,
+      "invalidReason": "Target file not found: #/definitions/User",
+      "createdAt": 1779449178443,
+      "lastValidated": 1779449178443
+    },
+    {
+      "id": "8022512d-ff41-4464-af9a-f0efc6a21063",
+      "projectId": "FoO1Fd7o",
+      "sourceNodeId": "c7e22dd3-3ce1-4f8d-9d38-1baca11f1502:0",
+      "targetNodeId": null,
+      "targetRefType": "same-project",
+      "targetRefString": "#/definitions/Category",
+      "targetRefKind": "support",
+      "isValid": false,
+      "invalidReason": "Target file not found: #/definitions/Category",
+      "createdAt": 1779449178443,
+      "lastValidated": 1779449178443
+    },
+    {
+      "id": "84d5e7c7-b8b8-4377-af17-e4aae9f20dc0",
+      "projectId": "FoO1Fd7o",
+      "sourceNodeId": "43242053-e408-4fcb-a603-79b6f51c29d8:0",
+      "targetNodeId": "c7e22dd3-3ce1-4f8d-9d38-1baca11f1502:0",
+      "targetRefType": "same-project",
+      "targetRefString": "./vignesh-spec.json",
+      "targetRefKind": "support",
+      "isValid": true,
+      "createdAt": 1779449178570,
+      "lastValidated": 1779449178570
+    },
+    {
+      "id": "91bcc55f-bf17-4fee-b045-6a806ce828e6",
+      "projectId": "FoO1Fd7o",
+      "sourceNodeId": "c7e22dd3-3ce1-4f8d-9d38-1baca11f1502:0",
+      "targetNodeId": null,
+      "targetRefType": "same-project",
+      "targetRefString": "#/definitions/Pet",
+      "targetRefKind": "support",
+      "isValid": false,
+      "invalidReason": "Target file not found: #/definitions/Pet",
+      "createdAt": 1779449178443,
+      "lastValidated": 1779449178443
+    },
+    {
+      "id": "a652a370-6621-4f6b-b61b-7b11eb53b7ed",
+      "projectId": "FoO1Fd7o",
+      "sourceNodeId": "c7e22dd3-3ce1-4f8d-9d38-1baca11f1502:0",
+      "targetNodeId": null,
+      "targetRefType": "same-project",
+      "targetRefString": "#/definitions/ApiResponse",
+      "targetRefKind": "support",
+      "isValid": false,
+      "invalidReason": "Target file not found: #/definitions/ApiResponse",
+      "createdAt": 1779449178443,
+      "lastValidated": 1779449178443
+    }
+  ]
+}

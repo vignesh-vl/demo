@@ -1,0 +1,95 @@
+{
+  "nodes": [
+    {
+      "id": "903e6a14-e130-4413-ae56-25d850415b44:0",
+      "projectId": "k0RteHUb",
+      "filePath": "vcs-import-test/import_dummy_3_48/new/vignesh-2.yml",
+      "docIndex": 0,
+      "assetType": "resource",
+      "lastIndexed": 1779451235361,
+      "schemaVersion": 1,
+      "kind": "ExtractIdentity",
+      "name": "extractIdentity-http-basic",
+      "namespace": "security",
+      "version": 1,
+      "contentHash": "9158b5d6f8581ec0"
+    },
+    {
+      "id": "9a42e728-374e-4b4c-b8e0-61b35fea39a3:0",
+      "projectId": "k0RteHUb",
+      "filePath": "vcs-import-test/.project-index",
+      "docIndex": 0,
+      "assetType": "support",
+      "lastIndexed": 1779451245573,
+      "schemaVersion": 1
+    },
+    {
+      "id": "9b3dc3dc-6a2f-4991-ba4f-6e196ee06523:0",
+      "projectId": "k0RteHUb",
+      "filePath": "vcs-import-test/import_dummy_3_48/new/kk.yml",
+      "docIndex": 0,
+      "assetType": "resource",
+      "lastIndexed": 1779451237691,
+      "schemaVersion": 1,
+      "kind": "API",
+      "name": "kk",
+      "namespace": "dem0",
+      "version": "1.0",
+      "contentHash": "cb4e7b397d1de797"
+    },
+    {
+      "id": "a2086a01-e442-48cd-a81a-883d026ce716:0",
+      "projectId": "k0RteHUb",
+      "filePath": "vcs-import-test/cache-1.yml",
+      "docIndex": 0,
+      "assetType": "resource",
+      "lastIndexed": 1779451239351,
+      "schemaVersion": 1,
+      "kind": "Cache",
+      "name": "Cache-TkiXT",
+      "namespace": "CatalogInventory",
+      "version": "1.0",
+      "contentHash": "8205ec1fad33941f"
+    }
+  ],
+  "edges": [
+    {
+      "id": "797ac9a3-5292-48f0-8f98-169c92ab877a",
+      "projectId": "k0RteHUb",
+      "sourceNodeId": "a2086a01-e442-48cd-a81a-883d026ce716:0",
+      "targetNodeId": null,
+      "targetRefType": "same-project",
+      "targetRefString": "CatalogInventory:Invoke-QweAb:1.0",
+      "targetRefKind": "resource",
+      "isValid": false,
+      "invalidReason": "Target resource not found: CatalogInventory:Invoke-QweAb:1.0",
+      "createdAt": 1779451239355,
+      "lastValidated": 1779451239355
+    },
+    {
+      "id": "94a992d8-6f57-4c95-b561-45dec9d983f3",
+      "projectId": "k0RteHUb",
+      "sourceNodeId": "9b3dc3dc-6a2f-4991-ba4f-6e196ee06523:0",
+      "targetNodeId": null,
+      "targetRefType": "same-project",
+      "targetRefString": "../kk-spec-2.yml",
+      "targetRefKind": "support",
+      "isValid": false,
+      "invalidReason": "Target file not found: vcs-import-test/import_dummy_3_48/kk-spec-2.yml",
+      "createdAt": 1779451237694,
+      "lastValidated": 1779451237694
+    },
+    {
+      "id": "c6bd7b6b-48df-486c-b549-8a1b8c46c8f4",
+      "projectId": "k0RteHUb",
+      "sourceNodeId": "9b3dc3dc-6a2f-4991-ba4f-6e196ee06523:0",
+      "targetNodeId": "16b8ec11-c191-4123-a732-576d1c743d97:0",
+      "targetRefType": "cross-project",
+      "targetRefString": "dem0:new:1.0",
+      "targetRefKind": "resource",
+      "isValid": true,
+      "createdAt": 1779451237694,
+      "lastValidated": 1779451237694
+    }
+  ]
+}
