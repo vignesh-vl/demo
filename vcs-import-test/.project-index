@@ -1,6 +1,15 @@
 {
   "nodes": [
     {
+      "id": "5b23ee95-14a8-4fe3-bbbd-ae9db9fc0c0e:0",
+      "projectId": "k0RteHUb",
+      "filePath": "vcs-import-test/api_studio_project.yml",
+      "docIndex": 0,
+      "assetType": "support",
+      "lastIndexed": 1789038063166,
+      "schemaVersion": 1
+    },
+    {
       "id": "903e6a14-e130-4413-ae56-25d850415b44:0",
       "projectId": "k0RteHUb",
       "filePath": "vcs-import-test/import_dummy_3_48/new/vignesh-2.yml",
@@ -57,14 +66,13 @@
       "id": "797ac9a3-5292-48f0-8f98-169c92ab877a",
       "projectId": "k0RteHUb",
       "sourceNodeId": "a2086a01-e442-48cd-a81a-883d026ce716:0",
-      "targetNodeId": null,
-      "targetRefType": "same-project",
+      "targetNodeId": "9766f0b1-f338-4372-a63d-1c22b08835cd:0",
+      "targetRefType": "cross-project",
       "targetRefString": "CatalogInventory:Invoke-QweAb:1.0",
       "targetRefKind": "resource",
-      "isValid": false,
-      "invalidReason": "Target resource not found: CatalogInventory:Invoke-QweAb:1.0",
+      "isValid": true,
       "createdAt": 1779451239355,
-      "lastValidated": 1779451239355
+      "lastValidated": 1789037999628
     },
     {
       "id": "94a992d8-6f57-4c95-b561-45dec9d983f3",
