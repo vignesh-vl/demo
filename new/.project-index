@@ -1,4 +1,23 @@
 {
-  "nodes": [],
+  "nodes": [
+    {
+      "id": "17fa9f03-3d61-4f15-a602-816fecdfd108:0",
+      "projectId": "FS4FqAtO",
+      "filePath": "new/.project-index",
+      "docIndex": 0,
+      "assetType": "support",
+      "lastIndexed": 1789038076371,
+      "schemaVersion": 1
+    },
+    {
+      "id": "6066912f-c03c-4115-872e-474c740d41f4:0",
+      "projectId": "FS4FqAtO",
+      "filePath": "new/api_studio_project.yml",
+      "docIndex": 0,
+      "assetType": "support",
+      "lastIndexed": 1789038078174,
+      "schemaVersion": 1
+    }
+  ],
   "edges": []
 }
